@@ -1,0 +1,198 @@
+.navbar {
+    position: fixed;
+    top: 0;
+    z-index: 10;
+    width: 100%;
+    padding-inline: 2%;
+    padding-block: 10px;
+    background-color: $color-white;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    @include responsive (max, 991px) {
+        padding-block: 8px;
+    }
+
+    @include responsive (max, 768px) {
+        padding-block: 8px;
+    }
+
+    &__logo {
+        width: 198px;
+        height: 55px;
+
+        @include responsive (max, 991px) {
+            width: 100px;
+            height: 35px;
+        }
+
+        img {
+            width: 100%;
+            height: 100%;
+        }
+    }
+
+    &__links {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: 25px;
+        margin-bottom: 0px;
+
+        li {
+            list-style-type: none;
+            padding-inline: 10px;
+
+            &.active {
+                border-bottom: 1.5px solid $color-primary;
+
+                a {
+                    color: $color-primary
+                }
+            }
+
+            a {
+                color: $black-par;
+                font-size: 18px;
+                font-weight: 400;
+                transition: color 0.3s ease;
+
+                &:hover {
+                    color: $color-primary;
+                }
+            }
+        }
+
+        @include responsive(max, 991px) {
+            display: none;
+        }
+    }
+
+    &__features {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: 40px;
+
+        @include responsive(max, 991px) {
+            display: none;
+        }
+
+        &__search {
+            border: none;
+            outline: none;
+            background-color: transparent;
+        }
+
+        &__signin {
+            font-size: 18px;
+            font-weight: 700;
+            transition: color 0.3s ease;
+            color: $color-primary;
+
+            &:hover {
+                color: $color-primary;
+            }
+        }
+
+        &__signup {
+            font-size: 18px;
+            font-weight: 700;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background-color: $color-primary;
+            transition: color 0.3s ease;
+            color: $color-white;
+            border-radius: 12px;
+            cursor: pointer;
+            padding: 10px 12px;
+
+        }
+    }
+
+
+
+    &__toogler {
+        display: none;
+
+        @include responsive(max, 991px) {
+            display: inline-block;
+        }
+
+        i {
+            color: $color-primary;
+        }
+    }
+
+    &-responsive {
+        .logo {
+            margin-block: 30px;
+            width: 180px;
+            height: 55px;
+
+            img {
+                width: 100%;
+                height: 100%;
+            }
+        }
+
+        .btn-close {
+            align-self: flex-start;
+        }
+
+        .offcanvas-body {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: flex-start;
+            text-align: center;
+
+            .links {
+                text-align: center;
+
+                ul {
+                    padding: 0;
+                }
+
+                li {
+                    list-style-type: none;
+                    padding-inline: 10px;
+                    margin-block: 30px;
+
+                    &.active {
+                        a {
+                            color: $color-primary
+                        }
+                    }
+
+                    a {
+                        color: $black-par;
+                        font-size: 18px;
+                        font-weight: 400;
+                        transition: color 0.3s ease;
+
+                        &:hover {
+                            color: $color-primary;
+                        }
+                    }
+                }
+            }
+
+            .lang {
+                width: 100%;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+
+                img {
+                    width: 50px;
+                    height: 50px;
+                    border-radius: 50%;
+                }
+            }
+        }
+    }
+}

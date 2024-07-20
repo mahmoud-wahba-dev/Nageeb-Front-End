@@ -1,0 +1,190 @@
+.auth {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+
+    &__banner {
+        position: relative;
+        width: 35%;
+
+        @include responsive(max, 991px) {
+            display: none;
+        }
+
+        &__content {
+            position: absolute;
+            top: 40%;
+
+            &__header {
+                max-width: 90%;
+                margin: auto;
+
+                font-size: 60px;
+                font-weight: 700;
+                font-family: $mainFont;
+                line-height: 70px;
+                color: $color-white;
+                margin-bottom: 20px;
+
+                span {
+                    color: #FFB600;
+                }
+            }
+
+            &__desc {
+                margin: auto;
+                font-weight: 400;
+                font-size: 32px;
+                color: $color-white-8;
+                max-width: 90%;
+                line-height: 38.73px;
+            }
+        }
+
+        &__image {
+            background-color: #00000066;
+            position: relative;
+            width: 100%;
+            height: 100%;
+
+            img {
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+            }
+
+            .overlay {
+                position: absolute;
+                top: 0;
+                left: 0;
+                right: 0;
+                bottom: 0;
+                background-color: #00000066;
+            }
+        }
+    }
+
+    &__form {
+        width: 60%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-between;
+        gap: 50px;
+
+        @include responsive(max, 991px) {
+            width: 100%;
+        }
+
+        .upperbar__language {
+            align-self: flex-end;
+            margin-inline: 20px;
+        }
+
+        &__data {
+            width: 60%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 32px;
+
+            @include responsive(max, 991px) {
+                width: 90%;
+            }
+
+            &__logo {
+                width: 200px;
+                height: 50px;
+
+                img {
+                    width: 100%;
+                    height: 100%;
+                    object-fit: cover;
+                }
+            }
+
+            &__head {
+                text-align: center;
+
+                .desc {
+                    color: $color-primary;
+                    font-size: 20px;
+                    font-weight: 400;
+                }
+
+                .page {
+                    font-size: 32px;
+                    font-weight: 600;
+                    color: $color-header;
+                }
+
+                .verification {
+                    font-size: 20px;
+                    font-weight: 400;
+                    color: #1C1C1C80;
+
+                    .phone-num {
+                        color: $color-primary;
+                    }
+                }
+            }
+
+            form {
+                width: 100%;
+                display: flex;
+                flex-direction: column;
+                align-items: flex-start;
+                gap: 24px;
+
+                @include responsive(max,991px) {
+                    gap: 12px;
+                }
+                input {
+                    width: 100%;
+                }
+
+                #otpSubmit {
+                    border: none;
+                    outline: none;
+                }
+
+                .resend {
+                    font-size: 16px;
+                    font-weight: 400;
+                    color: #989898;
+
+                    .btn_resend {
+                        color: #8D29D9;
+                    }
+                }
+            }
+
+            .select-type {
+                width: 100%;
+                .nav {
+                    gap: 20px;
+                    border: none;
+                    justify-content: space-between;
+                    &-item {
+                        width: 45%;
+                        .nav-link {
+                            width: 100%;
+                            border: 1px solid #D9D9D9;
+                            border-radius: 16px;
+                            color: #00000080;
+                            display: flex;
+                            align-items: center;
+                            justify-content: center;
+                            gap: 10px;
+                            &.active {
+                                background-color: #8D29D91A;
+                                border: 1px solid #8D29D9;
+                                color: black;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,10 @@
+.global-btn {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: $color-primary;
+    color: $color-white;
+    border-radius: 12px;
+    padding-block: 12px;
+}

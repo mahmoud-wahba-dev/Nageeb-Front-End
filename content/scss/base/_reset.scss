@@ -1,0 +1,113 @@
+a {
+  text-decoration: none;
+}
+
+// hide arrows for input[type="number"]
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Firefox */
+input[type="number"] {
+  -moz-appearance: textfield;
+}
+
+// redesign for scroll bar
+:root {
+  scroll-behavior: smooth;
+}
+
+* {
+  &::-webkit-scrollbar {
+    width: 5px;
+  }
+
+  /* Track */
+  &::-webkit-scrollbar-track {
+    background: #f1f1f1;
+  }
+
+  /* Handle */
+  &::-webkit-scrollbar-thumb {
+    background: $color-primary;
+    border-radius: 1rem;
+  }
+
+  /* Handle on hover */
+  &::-webkit-scrollbar-thumb:hover {
+    background: #555;
+  }
+}
+
+// change background of phone number country codes
+.iti--separate-dial-code .iti__selected-flag {
+  background-color: transparent !important;
+  font-family: $mainFont;
+  border: none;
+  outline: none;
+  flex: 1 0 0;
+}
+
+.iti__selected-flag {
+  padding-inline: 18px;
+}
+
+// input customization
+input[type="checkbox"] {
+  width: 25px;
+  height: 25px;
+}
+
+input[type='date'] {
+  flex: 1 0 0;
+  text-transform: uppercase;
+}
+
+input {
+  outline: none;
+  border: none;
+}
+
+input[type='date']::-webkit-calendar-picker-indicator {
+  background: transparent;
+  bottom: 0;
+  color: transparent;
+  cursor: pointer;
+  height: auto;
+  left: 0;
+  position: absolute;
+  right: 0;
+  top: 0;
+  width: auto;
+  flex: 1 0 0;
+}
+
+
+label {
+  font-size: 16px;
+  font-weight: 400;
+  color: #1C1C1C80;
+  margin-block: 10px;
+}
+
+.nageeb-height {
+  @include responsive (max, 991px) {
+    height: auto;
+  }
+}
+
+/* customize pages with main section*/
+main {
+
+  .nageeb-container {
+    margin-block: 90px;
+    margin-inline: 2%;
+
+    @include responsive (max, 991px) {
+      margin-block: 70px;
+    }
+
+  }
+}
