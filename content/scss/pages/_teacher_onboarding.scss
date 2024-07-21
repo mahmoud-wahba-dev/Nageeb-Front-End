@@ -1,0 +1,143 @@
+#multi-step-form {
+  .back_btn {
+    color: $color-primary;
+    font-size: 24px;
+    font-weight: 600;
+    line-height: 40px;
+    width: 63%;
+    padding: 11px 27px;
+    border: 1px solid $color-primary;
+  }
+}
+
+.form-step {
+  width: 100%;
+  display: none;
+  border: 1px solid #cccccc;
+  padding: 40px;
+  border-radius: 24px;
+  @include responsive (max,375px){
+    padding: 20px;
+  }
+}
+
+.form-step.active {
+  display: block;
+}
+
+.is-invalid + .error-message {
+  display: block;
+  color: red;
+  font-size: 14px;
+  margin-top: 5px;
+}
+
+.error-message {
+  display: none;
+}
+
+.is-invalid {
+  border: 2px solid red;
+  border-radius: 12px;
+  padding: 1rem;
+}
+
+.teacher_onboarding {
+  #form-step-1 {
+    .desc {
+      font-size: 20px;
+      font-weight: 400;
+      line-height: 24.2px;
+      color: $color-primary;
+      margin-bottom: 16px;
+    }
+    .page {
+      font-size: 32px;
+      font-weight: 700;
+      line-height: 38.73px;
+      color: #070707;
+      margin-bottom: 48px;
+    }
+  }
+
+  #form-step-3 {
+    .choices {
+      flex-direction: column;
+      .answer {
+        width: 100%;
+      }
+    }
+  }
+
+  #form-step-4 {
+    .choices {
+      flex-direction: column;
+      .answer {
+        width: 100%;
+      }
+    }
+  }
+  .auth__form__data {
+    width: 71%;
+    @include responsive(max, 425px) {
+      width: 95%;
+    }
+  }
+  .auth__form__data__head .desc {
+    margin-bottom: 16px;
+  }
+  .auth__form__data__head .page {
+    margin-bottom: 16px;
+  }
+  label {
+    margin-bottom: 8px;
+    margin-top: 0;
+  }
+  .input_group {
+    margin-bottom: 48px;
+  }
+  .global-btn {
+    border: none;
+    font-size: 24px;
+    font-weight: 600;
+    line-height: 40px;
+  }
+  .gap_16 {
+    gap: 16px;
+  }
+  .form-step {
+    margin-bottom: 56px;
+    .header {
+      font-size: 32px;
+      font-weight: 700;
+      line-height: 54px;
+      color: #070707;
+      margin-bottom: 16px;
+    }
+    .desc {
+      font-size: 24px;
+      font-weight: 400;
+      line-height: 29.05px;
+      color: #000000cc;
+      margin-bottom: 56px;
+    }
+  }
+  .choices {
+    flex-direction: row;
+    gap: 48px 8px;
+    flex-wrap: wrap;
+    .answer {
+      width: initial;
+      border: 0.75px solid #ededed;
+      border-radius: 9px;
+      background-color: transparent;
+      padding: 12px 22px;
+    }
+    label {
+      margin-bottom: 0;
+      font-size: 16px;
+      font-weight: 400;
+      line-height: 19.36px;
+    }
+  }
+}

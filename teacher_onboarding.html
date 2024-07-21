@@ -1,0 +1,414 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Nageeb | Teacher Onboarding</title>
+    <!-- Global bootstrap CDN V5.3.2 for ltr -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.2/css/bootstrap.min.css"
+      integrity="sha512-b2QcS5SsA8tZodcDtGRELiGv5SaKSk1vDHDaQRda0htPYWZ6046lr3kJ5bAAQdpV2mmA/4v0wQF9MyU6/pDIAg=="
+      crossorigin="anonymous"
+    />
+    <!-- Global Font Awesome CDN V6.4.2  -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+      integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+      crossorigin="anonymous"
+    />
+
+    <!-- Additional Owl Carousel CDN V2.3.4  -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"
+      integrity="sha512-tS3S5qG0BlhnQROyJXvNjeEM4UpMXHrQfTGmbQ1gKmelCxlSEBUaxhRBj/EFTzpbP4RVSrpEikbmdJobCvhE3g=="
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css"
+      integrity="sha512-sMXtMNL1zRzolHYKEujM2AqCLUR9F2C4/05cdbxjjLSRvMQIciEPCQZo++nk7go3BtSuK9kfa/s+a4f4i5pLkw=="
+      crossorigin="anonymous"
+    />
+
+    <!-- Additional CDN For Phone Number  -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.tutorialjinni.com/intl-tel-input/17.0.19/css/intlTelInput.css"
+    />
+
+    <!-- Global main css file for ltr  -->
+    <link rel="stylesheet" href="./content/css/main-ltr.css" />
+  </head>
+
+  <body>
+    <main>
+      <section class="nageeb-height teacher_onboarding">
+        <div class="auth">
+          <div class="auth__banner">
+            <div class="auth__banner__image">
+              <img
+                src="./content/assets/images/teacher_onboarding/teache_onboarding_bg.png"
+                alt="teache_onboarding_bg.png   "
+              />
+              <div class="overlay"></div>
+              <div class="auth__banner__content">
+                <h1 class="auth__banner__content__header">
+                  Enter your data and start <span>Now</span>
+                </h1>
+                <p class="auth__banner__content__desc">
+                  Are you ready to life this amazing journey
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="auth__form container mt-3">
+            <div class="upperbar__language">
+              <img src="./content/assets/images/general/en.png" alt="" />
+              English
+              <ul class="upperbar__language__list">
+                <li>
+                  <a href="#" class="active">
+                    <img src="./content/assets/images/general/en.png" alt="" />
+                    English
+                  </a>
+                </li>
+                <li>
+                  <a href="#">
+                    <img src="./content/assets/images/general/ar.png" alt="" />
+                    Arabic
+                  </a>
+                </li>
+              </ul>
+            </div>
+            <div class="auth__form__data">
+              <div class="auth__form__data__logo">
+                <img src="./content/assets/images/general/logo.png" alt="" />
+              </div>
+
+              <div class="w-100">
+                <!-- fetch country code in hidden input cla
+                    (country__code) -->
+
+                <div
+                  class="d-flex align-items-center justify-content-between gap-5"
+                >
+                  <form id="multi-step-form" class="w-100">
+                    <!-- Step 1 -->
+                    <div id="form-step-1" class="form-step active">
+                      <div class="auth__form__data__head">
+                        <p class="desc">
+                          We’re happy to have you join nageeb teachers
+                        </p>
+                        <h3 class="page">Enter your information</h3>
+                      </div>
+                      <div class="w-100 input_group">
+                        <label for="education">Educational Qualification</label>
+                        <select
+                          required
+                          class="form-select form_input"
+                          aria-label="Default select example"
+                          id="education"
+                        >
+                          <option selected disabled value="">
+                            select Your Gender
+                          </option>
+                          <option value="1">Bachelor's</option>
+                          <option value="2">BSC</option>
+                        </select>
+                      </div>
+                      <div class="w-100 input_group">
+                        <label for="country">Country</label>
+                        <select
+                          required
+                          class="form-select form_input"
+                          aria-label="Default select example"
+                          id="country"
+                        >
+                          <option selected disabled value="">
+                            select Your Country
+                          </option>
+                          <option value="1">Egypt 🇪🇬</option>
+                          <option value="2">Egypt 🇪🇬</option>
+                        </select>
+                      </div>
+                      <div class="w-100 position-relative input_group">
+                        <label for="date_of_birth">Date of birth</label>
+                        <input
+                          class="form_input"
+                          type="date"
+                          name="date_of_birth"
+                          id="date_of_birth"
+                          required
+                        />
+                      </div>
+
+                      <div class="form-submit">
+                        <button
+                          type="button"
+                          class="global-btn w-100"
+                          onclick="nextStep(1)"
+                        >
+                          Create Account
+                        </button>
+                      </div>
+                    </div>
+
+                    <!-- Step 2 -->
+                    <div id="form-step-2" class="form-step">
+                      <div class="w-100">
+                        <h1 class="header">What subjects do you teach?</h1>
+                        <h6 class="desc">
+                          You can select more than one option
+                        </h6>
+                      </div>
+                      <div class="choices">
+                        <div class="answer">
+                          <input id="answer-1" type="checkbox" />
+                          <label for="answer-1">Algebra</label>
+                        </div>
+                        <div class="answer">
+                          <input id="answer-2" type="checkbox" />
+                          <label for="answer-2">Geometry</label>
+                        </div>
+                        <div class="answer">
+                          <input id="answer-3" type="checkbox" />
+                          <label for="answer-3">Statistics</label>
+                        </div>
+
+                        <div class="answer">
+                          <input id="answer-3" type="checkbox" />
+                          <label for="answer-3">Statistics</label>
+                        </div>
+
+                        <div class="answer">
+                          <input id="answer-3" type="checkbox" />
+                          <label for="answer-3">Trigonometry</label>
+                        </div>
+                        <div class="answer">
+                          <input id="answer-3" type="checkbox" />
+                          <label for="answer-3">Calculus</label>
+                        </div>
+                        <div class="answer">
+                          <input id="answer-3" type="checkbox" />
+                          <label for="answer-3">Statistics</label>
+                        </div>
+                        <div class="answer">
+                          <input id="answer-3" type="checkbox" />
+                          <label for="answer-3">Statistics</label>
+                        </div>
+                        <div class="answer">
+                          <input id="answer-3" type="checkbox" />
+                          <label for="answer-3">Statistics</label>
+                        </div>
+                        <div class="answer">
+                          <input id="answer-3" type="checkbox" />
+                          <label for="answer-3">Statistics</label>
+                        </div>
+                      </div>
+                      <div class="form-submit d-flex gap_16">
+                        <button
+                          type="button"
+                          class="global-btn back_btn bg-transparent"
+                          onclick="previousStep(2)"
+                        >
+                          Previous
+                        </button>
+                        <button
+                          type="button"
+                          class="global-btn"
+                          onclick="nextStep(2)"
+                        >
+                          Next
+                        </button>
+                      </div>
+                    </div>
+
+                    <!-- Step 3 -->
+
+                    <div id="form-step-3" class="form-step">
+                      <div class="w-100">
+                        <h1 class="header">
+                          What Type Of Education Do You Want To Teach?
+                        </h1>
+                        <h6 class="desc">
+                          You can select more than one option
+                        </h6>
+                      </div>
+                      <div class="choices">
+                        <div class="answer">
+                          <input id="answer-1" type="checkbox" />
+                          <label for="answer-1">Primary School</label>
+                        </div>
+                        <div class="answer">
+                          <input id="answer-2" type="checkbox" />
+                          <label for="answer-2">Middle School</label>
+                        </div>
+                        <div class="answer">
+                          <input id="answer-3" type="checkbox" />
+                          <label for="answer-3">Secondary School</label>
+                        </div>
+
+                        <div class="answer">
+                          <input id="answer-3" type="checkbox" />
+                          <label for="answer-3">Quran Kareem</label>
+                        </div>
+                      </div>
+                      <div class="form-submit d-flex gap_16">
+                        <button
+                          type="button"
+                          class="global-btn back_btn bg-transparent"
+                          onclick="previousStep(3)"
+                        >
+                          Previous
+                        </button>
+                        <button
+                          type="button"
+                          class="global-btn"
+                          onclick="nextStep(3)"
+                        >
+                          Next
+                        </button>
+                      </div>
+                    </div>
+                    <!-- Step 4 -->
+
+                    <div id="form-step-4" class="form-step">
+                      <div class="w-100">
+                        <h1 class="header">
+                          How many years of teaching experience do you have?
+                        </h1>
+                        <h6 class="desc">
+                          You can select more than one option
+                        </h6>
+                      </div>
+                      <div class="choices">
+                        <div class="answer">
+                          <input id="answer-1" type="checkbox" />
+                          <label for="answer-1">1 - 5 Years</label>
+                        </div>
+                        <div class="answer">
+                          <input id="answer-2" type="checkbox" />
+                          <label for="answer-2">5 - 10 Years</label>
+                        </div>
+                        <div class="answer">
+                          <input id="answer-3" type="checkbox" />
+                          <label for="answer-3">10 -15 Years</label>
+                        </div>
+
+                        <div class="answer">
+                          <input id="answer-3" type="checkbox" />
+                          <label for="answer-3">15 - 20 Years</label>
+                        </div>
+                      </div>
+                      <div class="form-submit d-flex gap_16">
+                        <button
+                          type="button"
+                          class="global-btn back_btn bg-transparent"
+                          onclick="previousStep(4)"
+                        >
+                          Previous
+                        </button>
+                        <button
+                          type="button"
+                          class="global-btn"
+                          onclick="nextStep(4)"
+                        >
+                          Next
+                        </button>
+                      </div>
+                    </div>
+
+                    <!-- Step 4 -->
+                    <!-- <div id="form-step-4" class="form-step">
+                      <div class="w-100">
+                        <h1 class="header">
+                          المواد التي تريد تدرسيها للمرحلة الثانوية
+                        </h1>
+                        <h6 class="desc">يمكنك تحديد أكثر من أختيار</h6>
+                      </div>
+                      <div class="choices">
+                        <div class="answer">
+                          <input id="answer-1" type="checkbox" />
+                          <label for="answer-1"> اللغة الإنجليزية</label>
+                        </div>
+                        <div class="answer">
+                          <input id="answer-2" type="checkbox" />
+                          <label for="answer-2"> القرآن الكريم</label>
+                        </div>
+
+                        <div class="answer">
+                          <input id="answer-2" type="checkbox" />
+                          <label for="answer-2"> كيمياء </label>
+                        </div>
+                        <div class="answer">
+                          <input id="answer-2" type="checkbox" />
+                          <label for="answer-2"> النحو والصرف</label>
+                        </div>
+                        <div class="answer">
+                          <input id="answer-2" type="checkbox" />
+                          <label for="answer-2"> الحاسب الألي</label>
+                        </div>
+                      </div>
+                      <div class="form-submit d-flex gap-1">
+                        <button
+                          type="button"
+                          class="globalBtn back_btn w-25 bg-transparent"
+                          onclick="previousStep(4)"
+                        >
+                          السابق
+                        </button>
+                        <button
+                          type="button"
+                          class="globalBtn w-100"
+                          onclick="nextStep(4)"
+                        >
+                          تم
+                        </button>
+                      </div>
+                    </div> -->
+                  </form>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <!-- Global jquery CDN V3.7.1  -->
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"
+      integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g=="
+      crossorigin="anonymous"
+    ></script>
+    <!-- Global Bootstrap CDN V5.3.2  -->
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.2/js/bootstrap.bundle.min.js"
+      integrity="sha512-X/YkDZyjTf4wyc2Vy16YGCPHwAY8rZJY+POgokZjQB2mhIRFJCckEGc6YyX9eNsPfn0PzThEuNs+uaomE5CO6A=="
+      crossorigin="anonymous"
+    ></script>
+    <!-- Global Font Awesome CDN V6.5.1 -->
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/js/all.min.js"
+      integrity="sha512-GWzVrcGlo0TxTRvz9ttioyYJ+Wwk9Ck0G81D+eO63BaqHaJ3YZX9wuqjwgfcV/MrB2PhaVX9DkYVhbFpStnqpQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <!-- Additional Owl Carousel CDN V2.3.4  -->
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"
+      integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw=="
+      crossorigin="anonymous"
+    ></script>
+    <script src="./content/js/owl-init.js"></script>
+    <!-- Additional Files For this page  -->
+    <script src="https://cdn.tutorialjinni.com/intl-tel-input/17.0.19/js/intlTelInput.min.js"></script>
+    <script src="./content/js/toggle-hide-password.js"></script>
+    <script src="./content/js/phone-number-init.js"></script>
+    <!-- Global general Js File -->
+    <script src="./content/js/general.js"></script>
+    <script src="./content/js/teacher_onboarding.js"></script>
+  </body>
+</html>
