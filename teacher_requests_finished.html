@@ -1,0 +1,447 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Nageeb | Teacher Finished</title>
+    <!-- Global bootstrap CDN V5.3.2 for ltr -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.2/css/bootstrap.min.css"
+      integrity="sha512-b2QcS5SsA8tZodcDtGRELiGv5SaKSk1vDHDaQRda0htPYWZ6046lr3kJ5bAAQdpV2mmA/4v0wQF9MyU6/pDIAg=="
+      crossorigin="anonymous"
+    />
+    <!-- Global Font Awesome CDN V6.4.2  -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+      integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+      crossorigin="anonymous"
+    />
+
+    <!-- Global main css file for ltr  -->
+    <link rel="stylesheet" href="./content/css/main-ltr.css" />
+  </head>
+
+  <body>
+    <!-- start navbar -->
+    <nav>
+      <div class="navbar">
+        <div class="navbar__logo">
+          <img src="./content/assets/images/general/logo.png" alt="" />
+        </div>
+        <ul class="navbar__links">
+          <li class=""><a class="nav_link" href="index.html"> Home </a></li>
+          <li><a class="nav_link" href="teachers.html"> Teachers </a></li>
+          <li class="active">
+            <a class="nav_link" href="teachers.html"> Requests </a>
+          </li>
+          <li><a class="nav_link" href="teachers.html"> About Us </a></li>
+          <li><a class="nav_link" href="teachers.html"> contact Us </a></li>
+        </ul>
+        <div class="navbar__features">
+          <div class="upperbar__language">
+            <img src="./content/assets/images/general/en.png" alt="" />
+            English
+            <ul class="upperbar__language__list">
+              <li>
+                <a href="#" class="active">
+                  <img src="./content/assets/images/general/en.png" alt="" />
+                  English
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <img src="./content/assets/images/general/ar.png" alt="" />
+                  Arabic
+                </a>
+              </li>
+            </ul>
+          </div>
+          <button class="navbar__features__search">
+            <img src="./content/assets/images/general/search.svg" alt="" />
+          </button>
+          <!-- signin -->
+          <div class="w-100 dropdown center_flex">
+            <a
+              href="signin.html"
+              class="navbar__features__signin w-25 dropdown-toggle center_flex"
+              role="button"
+              data-bs-toggle="dropdown"
+            >
+              <div class="navbar_profile_container">
+                <img
+                  class="profile_img"
+                  src="./content/assets/images/general/Profile.png"
+                  alt="Profile.png"
+                />
+                <div class="user_data_container">
+                  <div class="user_name">Mohamed MonGe</div>
+                  <div class="user_role">Teacher</div>
+                </div>
+              </div>
+            </a>
+
+            <ul class="dropdown-menu">
+              <li>
+                <a class="dropdown-item edit_profile_link" href="#"
+                  >Edit Profile</a
+                >
+              </li>
+              <li>
+                <a class="dropdown-item log_out_link" href="#">Log Out</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <button
+          class="navbar__toogler border-0 outline-0 bg-transparent"
+          type="button"
+          data-bs-toggle="offcanvas"
+          data-bs-target="#offcanvasRight"
+          aria-controls="offcanvasRight"
+        >
+          <i class="fa-solid fa-bars-staggered fs-3" style="color: #8d29d9"></i>
+        </button>
+      </div>
+    </nav>
+
+    <!-- navbar responsive -->
+    <div
+      class="offcanvas offcanvas-end navbar-responsive"
+      tabindex="-1"
+      id="offcanvasRight"
+      aria-labelledby="offcanvasRightLabel"
+    >
+      <div class="offcanvas-header">
+        <div class="logo">
+          <img src="./content/assets/images/general/logo.png" alt="" />
+        </div>
+        <button
+          type="button"
+          class="btn-close"
+          data-bs-dismiss="offcanvas"
+          aria-label="Close"
+        ></button>
+      </div>
+      <div class="offcanvas-body">
+        <div class="links">
+          <ul>
+            <li class="active"><a href="index.html"> Home </a></li>
+            <li><a href="teachers.html"> Teachers </a></li>
+            <li><a href="teachers.html"> Requests </a></li>
+            <li><a href="teachers.html"> About Us </a></li>
+            <li><a href="teachers.html"> contact Us </a></li>
+          </ul>
+        </div>
+
+        <div class="navbar__features">
+          <div class="upperbar__language">
+            <img src="./content/assets/images/general/en.png" alt="" />
+            English
+            <ul class="upperbar__language__list">
+              <li>
+                <a href="#" class="active">
+                  <img src="./content/assets/images/general/en.png" alt="" />
+                  English
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <img src="./content/assets/images/general/ar.png" alt="" />
+                  Arabic
+                </a>
+              </li>
+            </ul>
+          </div>
+          <button class="navbar__features__search">
+            <img src="./content/assets/images/general/search.svg" alt="" />
+          </button>
+          <!-- signin -->
+          <div class="w-100 dropdown center_flex">
+            <a
+              href="signin.html"
+              class="navbar__features__signin w-25 dropdown-toggle center_flex"
+              role="button"
+              data-bs-toggle="dropdown"
+            >
+              <div class="navbar_profile_container">
+                <img
+                  class="profile_img"
+                  src="./content/assets/images/general/Profile.png"
+                  alt="Profile.png"
+                />
+                <div>
+                  <div class="user_name">Mohamed MonGe</div>
+                  <div class="user_role">Teacher</div>
+                </div>
+              </div>
+            </a>
+            <ul class="dropdown-menu">
+              <li>
+                <a class="dropdown-item edit_profile_link" href="#"
+                  >Edit Profile</a
+                >
+              </li>
+              <li>
+                <a class="dropdown-item log_out_link" href="#">Log Out</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <main>
+      <section class="teacher_profile_page">
+        <div class="nageeb-container">
+          <!-- start hero -->
+          <div class="text-center requests_container">
+            <img
+              class="w-100 h-100"
+              src="./content/assets/images/teacher_profile/teacher_profile_Hero Section.png"
+              alt="teacher_profile_Hero Section.png"
+            />
+            <div class="requests_txt">
+              <p class="requests_no">Requests <span>(10)</span></p>
+              <div>
+                <div class="dropdown">
+                  <button
+                    class="btn btn_toggle dropdown-toggle"
+                    type="button"
+                    data-bs-toggle="dropdown"
+                    aria-expanded="false"
+                  >
+                    Finished
+                  </button>
+                  <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" href="#">Current</a></li>
+                    <li>
+                      <a class="dropdown-item" href="#">New</a>
+                    </li>
+                    <li>
+                      <a class="dropdown-item" href="#">Canceled</a>
+                    </li>
+
+                    <li>
+                      <a class="dropdown-item" href="#">Upcoming</a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- cards_container -->
+          <div class="cards_container">
+            <div class="row g_y_40">
+              <div class="col-md-4 d-flex justify-content-center">
+                <div class="card">
+                  <div>
+                    <img
+                      class="student_img_request"
+                      src="./content/assets/images/teacher_requests/student_request_img.png"
+                      alt="student_request_img.png"
+                    />
+                  </div>
+                  <div class="request_data_container mb-0">
+                    <div class="w-100">
+                      <p class="lesson_name">Mathematics</p>
+                      <p class="student_grade">Third secondary</p>
+                      <a
+                        class="details_link"
+                        href=""
+                        data-bs-toggle="modal"
+                        data-bs-target="#details_modal"
+                        >Details</a
+                      >
+                    </div>
+                    <div class="date">2024 / 15 /4 8:00 PM</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- Details  Modal -->
+    <div
+      class="modal fade details_modal"
+      id="details_modal"
+      tabindex="-1"
+      aria-labelledby="details_modal"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog">
+        <div class="modal-content modal_container">
+          <div class="modal-header">
+            <span class="request_details">Request details</span>
+
+            <span class="status finished_status">Finished</span>
+          </div>
+          <div class="modal-body">
+            <div class="teacher_data">
+              <div>
+                <img
+                  class="teacher_img"
+                  src="./content/assets/images/teacher_profile/teacher_img.png"
+                  alt="teacher_img.png"
+                />
+              </div>
+              <div>
+                <p class="teacher_name">Mr . Mohamed MonGe</p>
+                <div class="stars">
+                  <img
+                    src="./content/assets/images/modals/stars.png"
+                    alt="stars.png"
+                  />
+                </div>
+              </div>
+            </div>
+            <div class="flex_between">
+              <span class="label">Subject:</span>
+              <span class="answer">Revival</span>
+            </div>
+            <div class="flex_between">
+              <span class="label">Start Date:</span>
+              <span class="answer">3/13/2024</span>
+            </div>
+            <div class="flex_between">
+              <span class="label">NB:</span>
+              <span class="answer">- - - - </span>
+            </div>
+            <div class="flex_between">
+              <span class="label">Discount:</span>
+              <span class="answer">00.00</span>
+            </div>
+            <hr />
+            <div class="flex_between mb_56">
+              <span class="time_label">Time</span>
+              <span class="time_answer">30 Mins</span>
+            </div>
+          </div>
+          <div class="modal-footer">
+            <button
+              type="button"
+              class="global-btn btn-outline-primary btn_make_appointment"
+            >
+              Make an appointment
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Details  Modal -->
+    <!-- start footer -->
+    <footer class="footer">
+      <div class="footer-container">
+        <div class="footer-logo">
+          <img src="./content/assets/images/general/logo.png" alt="Logo" />
+          <p>
+            Where every game is a lesson, and every lesson is a game. Our app
+            transforms education into playful games, captivating young minds
+            with interactive fun.
+          </p>
+          <div class="app-links">
+            <a href="#"
+              ><img
+                src="./content/assets/images/general/google.svg"
+                alt="Google Play"
+            /></a>
+            <a href="#"
+              ><img
+                src="./content/assets/images/general/apple.svg"
+                alt="App Store"
+            /></a>
+          </div>
+        </div>
+        <div class="footer-links">
+          <div class="quick-links">
+            <h3>Quick Links</h3>
+            <ul>
+              <li><a href="#">Privacy Policy</a></li>
+              <li><a href="#">Terms & Conditions</a></li>
+              <li><a href="#">Support</a></li>
+            </ul>
+          </div>
+          <div class="company">
+            <h3>Company</h3>
+            <ul>
+              <li><a href="teachers.html">Teachers</a></li>
+              <li><a href="index.html">Home</a></li>
+            </ul>
+          </div>
+          <div class="connect">
+            <h3>Connect with us</h3>
+            <ul>
+              <li>
+                <a href="#"
+                  ><img
+                    src="./content/assets/images/general/fb.svg"
+                    alt="Facebook"
+                  />
+                  Facebook</a
+                >
+              </li>
+              <li>
+                <a href="#"
+                  ><img
+                    src="./content/assets/images/general/ins.svg"
+                    alt="Instagram"
+                  />
+                  Instagram</a
+                >
+              </li>
+              <li>
+                <a href="#"
+                  ><img
+                    src="./content/assets/images/general/x.svg"
+                    alt="Twitter"
+                  />
+                  Twitter</a
+                >
+              </li>
+              <li>
+                <a href="#"
+                  ><img
+                    src="./content/assets/images/general/tik.svg"
+                    alt="TikTok"
+                  />
+                  TikTok</a
+                >
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>© Copyright 2024, All Rights Reserved</p>
+      </div>
+    </footer>
+
+    <!-- Global jquery CDN V3.7.1  -->
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"
+      integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g=="
+      crossorigin="anonymous"
+    ></script>
+    <!-- Global Bootstrap CDN V5.3.2  -->
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.2/js/bootstrap.bundle.min.js"
+      integrity="sha512-X/YkDZyjTf4wyc2Vy16YGCPHwAY8rZJY+POgokZjQB2mhIRFJCckEGc6YyX9eNsPfn0PzThEuNs+uaomE5CO6A=="
+      crossorigin="anonymous"
+    ></script>
+
+    <!-- Global Font Awesome CDN V6.5.1 -->
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/js/all.min.js"
+      integrity="sha512-GWzVrcGlo0TxTRvz9ttioyYJ+Wwk9Ck0G81D+eO63BaqHaJ3YZX9wuqjwgfcV/MrB2PhaVX9DkYVhbFpStnqpQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <!-- Global general Js File -->
+    <script src="./content/js/general.js"></script>
+  </body>
+</html>
