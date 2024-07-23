@@ -1,0 +1,39 @@
+.requests_container {
+    position: relative;
+    margin-bottom: 80px;
+    @include responsive (max,425px){
+      margin-bottom: 10px;
+      height: 170px;
+    }
+  
+    .requests_txt {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      z-index: 1;
+    }
+    .requests_no {
+      font-size: 48px;
+      font-weight: 700;
+      line-height: 64px;
+      color: white;
+      margin-bottom: 24px;
+      @include responsive (max,425px){
+        font-size: 26px;
+        font-weight: 700;
+        line-height: initial;
+        margin-bottom: 8px;
+      }
+    }
+    .btn_toggle {
+      background-color: $color-secondary;
+      padding: 14px 37px;
+      border: none;
+      color: white;
+    }
+    .dropdown-toggle::after {
+      border-top: 0.3em solid white;
+    }
+  }
+  

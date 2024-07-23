@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Nageeb | Teacher Profile</title>
+    <title>Nageeb | Teacher Requests All</title>
     <!-- Global bootstrap CDN V5.3.2 for ltr -->
     <link
       rel="stylesheet"
@@ -19,15 +19,8 @@
       crossorigin="anonymous"
     />
 
-    <!-- Additional CDN For Phone Number  -->
-    <link
-      rel="stylesheet"
-      href="https://cdn.tutorialjinni.com/intl-tel-input/17.0.19/css/intlTelInput.css"
-    />
-
     <!-- Global main css file for ltr  -->
     <link rel="stylesheet" href="./content/css/main-ltr.css" />
-    <style></style>
   </head>
 
   <body>
@@ -203,151 +196,146 @@
       <section class="teacher_profile_page">
         <div class="nageeb-container">
           <!-- start hero -->
-          <form action="">
-            <div class="text-center">
-              <img
-                class="w-100"
-                src="./content/assets/images/teacher_profile/teacher_profile_Hero Section.png"
-                alt="teacher_profile_Hero Section.png"
-              />
+          <div class="text-center requests_container">
+            <img
+              class="w-100 h-100"
+              src="./content/assets/images/teacher_profile/teacher_profile_Hero Section.png"
+              alt="teacher_profile_Hero Section.png"
+            />
+            <div class="requests_txt">
+              <p class="requests_no">Requests <span>(10)</span></p>
+              <div>
+                <div class="dropdown">
+                  <button
+                    class="btn btn_toggle dropdown-toggle"
+                    type="button"
+                    data-bs-toggle="dropdown"
+                    aria-expanded="false"
+                  >
+                    All
+                  </button>
+                  <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" href="#">Current</a></li>
+                    <li>
+                      <a class="dropdown-item" href="#">Finished</a>
+                    </li>
+                    <li>
+                      <a class="dropdown-item" href="#">Canceled</a>
+                    </li>
+
+                    <li>
+                      <a class="dropdown-item" href="#">Upcoming</a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
             </div>
-            <div class="teacher_img_name_container">
-              <div class="position-relative">
+          </div>
+          <!-- cards_container -->
+          <div class="cards_container">
+            <div class="row g_y_40">
+              <div class="col-md-4 d-flex justify-content-center">
+                <div class="card">
+                  <div>
+                    <img
+                      class="student_img_request"
+                      src="./content/assets/images/teacher_requests/student_request_img.png"
+                      alt="student_request_img.png"
+                    />
+                  </div>
+                  <div class="request_data_container">
+                    <div class="w-100">
+                      <p class="lesson_name">Mathematics</p>
+                      <p class="student_grade">Third secondary</p>
+                      <a
+                        class="details_link"
+                        href=""
+                        data-bs-toggle="modal"
+                        data-bs-target="#details_modal"
+                        >Details</a
+                      >
+                    </div>
+                    <div class="date">2024 / 15 /4 8:00 PM</div>
+                  </div>
+                  <div class="btn_container">
+                    <button class="btn btn_cancel">Cancel</button>
+                    <button class="btn btn_accept">Accept</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- Details  Modal -->
+    <div
+      class="modal fade details_modal"
+      id="details_modal"
+      tabindex="-1"
+      aria-labelledby="details_modal"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog">
+        <div class="modal-content modal_container">
+          <div class="modal-header">
+            <span class="request_details">Request details</span>
+
+          </div>
+          <div class="modal-body">
+            <div class="teacher_data">
+              <div>
                 <img
                   class="teacher_img"
                   src="./content/assets/images/teacher_profile/teacher_img.png"
                   alt="teacher_img.png"
                 />
-                <input type="file" class="file_input" />
               </div>
-
               <div>
-                <p class="user_name">Mohamed MonGe</p>
-                <p class="user_role">Teacher</p>
+                <p class="teacher_name">Mr . Mohamed MonGe</p>
+                <div class="stars">
+                  <img
+                    src="./content/assets/images/modals/stars.png"
+                    alt="stars.png"
+                  />
+                </div>
               </div>
             </div>
-
-            <div class="form_container">
-              <div class="row">
-                <div class="col-md-6">
-                  <div class="input_group">
-                    <label for="fname">First Name</label>
-                    <input
-                      type="text"
-                      name="fname"
-                      id="fname"
-                      class="form_input"
-                    />
-                  </div>
-                </div>
-                <div class="col-md-6">
-                  <div class="input_group">
-                    <label for="lname">Last Name </label>
-                    <input
-                      type="text"
-                      name="lname"
-                      id="lname"
-                      class="form_input"
-                    />
-                  </div>
-                </div>
-              </div>
-              <div class="row">
-                <div class="col-md-6">
-                  <label for="Country">Country</label>
-                  <div class="input_group">
-                    <select class="form_input form-select" id="Country">
-                      <option selected disabled value="">
-                        select Your Country
-                      </option>
-                      <option value="1">Egypt 🇪🇬</option>
-                      <option value="2">Egypt 🇪🇬</option>
-                    </select>
-                  </div>
-                </div>
-                <div class="col-md-6">
-                  <div class="w-100 input_group">
-                    <!-- fetch country code in hidden input (country__code) -->
-                    <input
-                      type="number"
-                      value="1"
-                      hidden
-                      class="country__code"
-                    />
-                    <label for="phone">Phone Number</label>
-                    <div
-                      class="d-flex align-items-center justify-content-start w-100"
-                      style="gap: 10px"
-                    >
-                      <input
-                        name="phone"
-                        class="form_input"
-                        type="number"
-                        id="phone"
-                      />
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div class="row">
-                <div class="col-md-6">
-                  <div class="input_group">
-                    <label for="education">Educational level</label>
-                    <select class="form_input form-select" id="education">
-                      <option selected disabled value="">
-                        select Your Educational level
-                      </option>
-                      <option value="1">Secondary 🇪</option>
-                      <option value="2">Secondary</option>
-                    </select>
-                  </div>
-                </div>
-
-                <div class="col-md-6">
-                  <div class="input_group">
-                    <label for="Subject">Subject</label>
-                    <input
-                      type="text"
-                      name="Subject"
-                      id="Subject"
-                      class="form_input"
-                    />
-                  </div>
-                </div>
-              </div>
-
-              <div class="row">
-                <div class="col-md-6">
-                  <div class="input_group">
-                    <label for="available_days"> Days available</label>
-                    <input
-                      type="text"
-                      name="available_days"
-                      id="available_days"
-                      class="form_input"
-                    />
-                  </div>
-                </div>
-
-                <div class="col-md-6">
-                  <div class="input_group">
-                    <label for="Description">Description</label>
-                    <textarea
-                      class="form_input text_area"
-                      name="Description"
-                      id="Description"
-                    ></textarea>
-                  </div>
-                </div>
-              </div>
-              <div class="btn_save_container">
-                <button class="global-btn btn_save">Save</button>
-              </div>
+            <div class="flex_between">
+              <span class="label">Subject:</span>
+              <span class="answer">Revival</span>
             </div>
-          </form>
+            <div class="flex_between">
+              <span class="label">Start Date:</span>
+              <span class="answer">3/13/2024</span>
+            </div>
+            <div class="flex_between">
+              <span class="label">NB:</span>
+              <span class="answer">- - - - </span>
+            </div>
+            <div class="flex_between">
+              <span class="label">Discount:</span>
+              <span class="answer">00.00</span>
+            </div>
+            <hr />
+            <div class="flex_between mb_56">
+              <span class="time_label">Time</span>
+              <span class="time_answer">30 Mins</span>
+            </div>
+          </div>
+          <div class="modal-footer">
+            <button
+              type="button"
+              class="global-btn btn-outline-primary btn_make_appointment"
+            >
+              Make an appointment
+            </button>
+          </div>
         </div>
-      </section>
-    </main>
+      </div>
+    </div>
+    <!-- Details  Modal -->
     <!-- start footer -->
     <footer class="footer">
       <div class="footer-container">
@@ -447,6 +435,7 @@
       integrity="sha512-X/YkDZyjTf4wyc2Vy16YGCPHwAY8rZJY+POgokZjQB2mhIRFJCckEGc6YyX9eNsPfn0PzThEuNs+uaomE5CO6A=="
       crossorigin="anonymous"
     ></script>
+
     <!-- Global Font Awesome CDN V6.5.1 -->
     <script
       src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/js/all.min.js"
@@ -454,10 +443,6 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     ></script>
-    <script src="https://cdn.tutorialjinni.com/intl-tel-input/17.0.19/js/intlTelInput.min.js"></script>
-
-    <script src="./content/js/phone-number-init.js"></script>
-
     <!-- Global general Js File -->
     <script src="./content/js/general.js"></script>
   </body>

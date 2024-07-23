@@ -69,6 +69,7 @@
   .dropdown-menu[data-bs-popper] {
     right: 0;
     left: initial;
+    width: 100%;
   }
 }
 // for responsive navbar
@@ -148,11 +149,19 @@
       max-width: 80%;
       padding: 19px 18px;
       background-color: transparent;
+      @include responsive (max,425px){
+        max-width: 100%;
+        padding: 10px;
+      }
     }
     .text_area {
       min-height: 190px;
       max-width: 80%;
       outline: none;
+      @include responsive (max,425px){
+        max-width: 100%;
+        padding: 10px;
+      }
     }
     .btn_save {
       max-width: 58%;
