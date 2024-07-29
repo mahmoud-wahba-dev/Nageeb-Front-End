@@ -11,7 +11,9 @@
 @import "./components/form_input";
 @import "./components/global-btn";
 @import "./components/otp";
-
+@import "./components/requests_container";
+@import "./components/card";
+@import "./components/modals";
 
 // layout
 @import "./layout/nav";
@@ -19,4 +21,7 @@
 // pages
 @import "./pages/auth";
 @import "./pages/index";
-
+@import "./pages/teacher_onboarding";
+@import "./pages/teacher_profile";
+@import "./pages/teacher_requests_new";
+@import "./pages/teacher_requests_current";
