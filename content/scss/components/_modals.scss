@@ -299,3 +299,62 @@
     }
   }
 }
+
+.log_out_modal {
+  .gif_modal-container {
+    width: 294px;
+    height: 360px;
+    margin: auto;
+    margin-bottom: 24px;
+  }
+}
+
+.filter_modal {
+  .modal-dialog {
+    max-width: 706px;
+  }
+  .choices {
+    flex-direction: row;
+    margin-top: 32px;
+    margin-bottom: 48px;
+    gap: 24px;
+    flex-wrap: wrap;
+    .answer {
+      padding: 6px 9px;
+      cursor: pointer;
+      width: initial;
+    }
+    .answer:has(input:checked) {
+      border: 0.5px solid #ededed;
+      border-radius: 6px;
+    }
+    label {
+      margin-bottom: 0;
+    }
+    input {
+      cursor: pointer;
+    }
+  }
+
+  .filter_for {
+    font-size: 40px;
+    font-weight: 700;
+    line-height: 48.41px;
+    margin-bottom: 40px;
+    color: $black-par;
+  }
+  .filter_by {
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 32px;
+    text-align: left;
+    color: $black-par;
+    margin-bottom: 32px;
+  }
+  .btn_filter {
+    padding: 11px;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 19.36px;
+  }
+}

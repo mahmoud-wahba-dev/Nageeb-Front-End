@@ -1,0 +1,218 @@
+.teacher_request_page {
+  .nageeb-container {
+    padding-top: 16px;
+    padding-left: 52px;
+    @include responsive(max,425px){
+      padding: 16px;
+    }
+  }
+  .form_container {
+    border: 1px solid #d9d9d9;
+    border-radius: 24px;
+    padding: 24px 64px;
+    @include responsive(max, 768px) {
+      padding: 10px;
+    }
+
+    form {
+      label {
+        font-size: 16px;
+        font-weight: 700;
+        line-height: 19.36px;
+        color: #070707;
+        margin-bottom: 8px;
+        width: 100%;
+      }
+      .form_input,
+      .form_select,
+      .txt_area {
+        width: 100%;
+        max-width: 100%;
+        height: 64px;
+        border-radius: 8px;
+        border: 1px solid #ededed;
+        // font-size: 12px;
+        font-weight: 400;
+        line-height: 14.52px;
+        color: #000000cc;
+      }
+      .input_group {
+        margin-bottom: 24px;
+      }
+
+      .promo_container {
+        display: flex;
+        gap: 15px;
+        align-items: center;
+
+        .btn_promo {
+          height: 48px;
+          font-size: 16px;
+          font-weight: 700;
+          line-height: 19.36px;
+          color: $color-primary;
+          border: 0.99px solid $color-primary;
+          &:hover {
+            color: white;
+            background-color: $color-primary;
+          }
+        }
+      }
+    }
+    .txt_area {
+      height: 112px !important;
+      border-radius: 8px;
+      outline: none;
+      padding: 10px;
+    }
+    .btn_book {
+      font-size: 16px;
+      font-weight: 700;
+      line-height: 19.36px;
+      height: 64px;
+    }
+  }
+
+  .teacher_data_container {
+    padding: 24px;
+    border: 1px solid #d9d9d9;
+    border-radius: 24px;
+    padding-bottom: 139px;
+
+    @include responsive(max, 1024px) {
+      padding-bottom: 67px;
+    }
+
+    @include responsive(max, 768px) {
+      padding: 10px;
+    }
+    @include responsive(max, 425px) {
+      padding-bottom: 24px;
+    }
+
+    .teacher_img_name_container {
+      display: flex;
+      align-items: center;
+      gap: 32px;
+      margin-bottom: 40px;
+      @include responsive(max, 768px) {
+        flex-wrap: wrap;
+      }
+      .teacher_name {
+        font-size: 24px;
+        font-weight: 700;
+        line-height: 32px;
+        color: $black-par;
+        margin-bottom: 16px;
+      }
+      .teacher_subject {
+        font-size: 16px;
+        font-weight: 500;
+        line-height: 19.36px;
+        color: #000000cc;
+        margin-bottom: 16px;
+      }
+      .rating {
+        font-size: 13.1px;
+        font-weight: 500;
+        line-height: 15.86px;
+        color: $color-primary;
+      }
+      .teacher_img {
+        width: 150px;
+        height: 150px;
+        border-radius: 50%;
+      }
+
+      .gap_4 {
+        gap: 4px;
+      }
+    }
+    .teacher_bio {
+      font-size: 16px;
+      font-weight: 400;
+      line-height: 24px;
+      color: #000000cc;
+      margin-bottom: 40px;
+    }
+    .about_teacher_container {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 24px;
+      padding-top: 14px;
+      padding-right: 16px;
+      padding-bottom: 14px;
+      padding-left: 8px;
+
+      .about_teacher_title {
+        font-size: 16px;
+        font-weight: 500;
+        line-height: 19.36px;
+        color: $black-par;
+        display: flex;
+        align-items: center;
+        gap: 16px;
+        &::before {
+          content: url("data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMzIiIGhlaWdodD0iMzIiIHZpZXdCb3g9IjAgMCAzMiAzMiIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPHBhdGggZD0iTTE2LjAwMDIgMjkuMzMzNUM5LjU2MDE2IDI5LjMzMzUgNC4zMzM1IDI0LjEwNjggNC4zMzM1IDE3LjY2NjhDNC4zMzM1IDExLjIyNjggOS41NjAxNiA2LjAwMDEyIDE2LjAwMDIgNi4wMDAxMkMyMi40NDAyIDYuMDAwMTIgMjcuNjY2OCAxMS4yMjY4IDI3LjY2NjggMTcuNjY2OCIgc3Ryb2tlPSIjMDcwNzA3IiBzdHJva2Utd2lkdGg9IjEuNSIgc3Ryb2tlLWxpbmVjYXA9InJvdW5kIiBzdHJva2UtbGluZWpvaW49InJvdW5kIi8+CjxwYXRoIGQ9Ik0xNi4wMDA1IDEwLjY2NjdWMTcuMzMzNCIgc3Ryb2tlPSIjMDcwNzA3IiBzdHJva2Utd2lkdGg9IjEuNSIgc3Ryb2tlLWxpbmVjYXA9InJvdW5kIiBzdHJva2UtbGluZWpvaW49InJvdW5kIi8+CjxwYXRoIGQ9Ik0xMiAyLjY2NjVIMjAiIHN0cm9rZT0iIzA3MDcwNyIgc3Ryb2tlLXdpZHRoPSIxLjUiIHN0cm9rZS1taXRlcmxpbWl0PSIxMCIgc3Ryb2tlLWxpbmVjYXA9InJvdW5kIiBzdHJva2UtbGluZWpvaW49InJvdW5kIi8+CjxwYXRoIGQ9Ik0yNS4zMzM1IDIyLjY2NjZWMjgiIHN0cm9rZT0iIzA3MDcwNyIgc3Ryb2tlLXdpZHRoPSIxLjUiIHN0cm9rZS1saW5lY2FwPSJyb3VuZCIgc3Ryb2tlLWxpbmVqb2luPSJyb3VuZCIvPgo8cGF0aCBkPSJNMjEuMzMzNSAyMi42NjY2VjI4IiBzdHJva2U9IiMwNzA3MDciIHN0cm9rZS13aWR0aD0iMS41IiBzdHJva2UtbGluZWNhcD0icm91bmQiIHN0cm9rZS1saW5lam9pbj0icm91bmQiLz4KPC9zdmc+Cg==");
+          display: inline-block;
+          vertical-align: middle;
+        }
+      }
+      .years_exp {
+        &::before {
+          content: url("data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMzIiIGhlaWdodD0iMzIiIHZpZXdCb3g9IjAgMCAzMiAzMiIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPHBhdGggZD0iTTExLjU2MDMgMTguNjY2Nkg1LjMzMzY2QzMuODY2OTkgMTguNjY2NiAyLjY2Njk5IDE5Ljg2NjYgMi42NjY5OSAyMS4zMzMzVjI5LjMzMzNIMTEuNTYwM1YxOC42NjY2WiIgc3Ryb2tlPSIjMDcwNzA3IiBzdHJva2Utd2lkdGg9IjEuNSIgc3Ryb2tlLW1pdGVybGltaXQ9IjEwIiBzdHJva2UtbGluZWNhcD0icm91bmQiIHN0cm9rZS1saW5lam9pbj0icm91bmQiLz4KPHBhdGggZD0iTTE3Ljc3MzEgMTMuMzMzM0gxNC4yMTMxQzEyLjc0NjQgMTMuMzMzMyAxMS41NDY0IDE0LjUzMzMgMTEuNTQ2NCAxNS45OTk5VjI5LjMzMzNIMjAuNDM5N1YxNS45OTk5QzIwLjQzOTcgMTQuNTMzMyAxOS4yNTMxIDEzLjMzMzMgMTcuNzczMSAxMy4zMzMzWiIgc3Ryb2tlPSIjMDcwNzA3IiBzdHJva2Utd2lkdGg9IjEuNSIgc3Ryb2tlLW1pdGVybGltaXQ9IjEwIiBzdHJva2UtbGluZWNhcD0icm91bmQiIHN0cm9rZS1saW5lam9pbj0icm91bmQiLz4KPHBhdGggZD0iTTI2LjY2NjYgMjIuNjY2NkgyMC40Mzk5VjI5LjMzMzNIMjkuMzMzM1YyNS4zMzMzQzI5LjMzMzMgMjMuODY2NiAyOC4xMzMzIDIyLjY2NjYgMjYuNjY2NiAyMi42NjY2WiIgc3Ryb2tlPSIjMDcwNzA3IiBzdHJva2Utd2lkdGg9IjEuNSIgc3Ryb2tlLW1pdGVybGltaXQ9IjEwIiBzdHJva2UtbGluZWNhcD0icm91bmQiIHN0cm9rZS1saW5lam9pbj0icm91bmQiLz4KPHBhdGggZD0iTTE2LjY5MzYgMi43NjAwMUwxNy40MDAzIDQuMTczMzRDMTcuNDkzNiA0LjM3MzM0IDE3Ljc0NyA0LjU2IDE3Ljk2MDMgNC41ODY2N0wxOS4yNDAzIDQuODAwMDFDMjAuMDUzNiA0LjkzMzM0IDIwLjI1MzYgNS41MzMzMSAxOS42NjcgNi4xMDY2NUwxOC42NjcgNy4xMDY2NUMxOC40OTM2IDcuMjc5OTggMTguNDAwMyA3LjU5OTk5IDE4LjQ1MzYgNy44MjY2NkwxOC43MzM2IDkuMDUzMzRDMTguOTYwMyAxMC4wMjY3IDE4LjQ0MDMgMTAuNCAxNy41ODcgOS44OTMzNUwxNi4zODcgOS4xODY2OEMxNi4xNzM2IDkuMDUzMzUgMTUuODEzNiA5LjA1MzM1IDE1LjYwMDMgOS4xODY2OEwxNC40MDAzIDkuODkzMzVDMTMuNTQ3IDEwLjQgMTMuMDI3IDEwLjAyNjcgMTMuMjUzNiA5LjA1MzM0TDEzLjUzMzYgNy44MjY2NkMxMy41ODcgNy41OTk5OSAxMy40OTM2IDcuMjY2NjUgMTMuMzIwMyA3LjEwNjY1TDEyLjMzMzYgNi4xMTk5OUMxMS43NDcgNS41MzMzMyAxMS45MzM2IDQuOTQ2NjUgMTIuNzYwMyA0LjgxMzMxTDE0LjA0MDMgNC42MDAwMUMxNC4yNTM2IDQuNTYwMDEgMTQuNTA3IDQuMzczMzUgMTQuNjAwMyA0LjE4NjY4TDE1LjMwNyAyLjc3MzMxQzE1LjY5MzYgMS45OTk5OCAxNi4zMDcgMi4wMDAwMSAxNi42OTM2IDIuNzYwMDFaIiBzdHJva2U9IiMwNzA3MDciIHN0cm9rZS13aWR0aD0iMS41IiBzdHJva2UtbGluZWNhcD0icm91bmQiIHN0cm9rZS1saW5lam9pbj0icm91bmQiLz4KPC9zdmc+Cg==");
+        }
+      }
+      .subjects {
+        &::before {
+          content: url("data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMzIiIGhlaWdodD0iMzIiIHZpZXdCb3g9IjAgMCAzMiAzMiIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPHBhdGggZD0iTTI5LjMzMzIgMjIuMzJWNi4yMjY3MkMyOS4zMzMyIDQuNjI2NzIgMjguMDI2NSAzLjQ0MDA1IDI2LjQzOTggMy41NzMzOEgyNi4zNTk4QzIzLjU1OTggMy44MTMzOCAxOS4zMDY1IDUuMjQwMDUgMTYuOTMzMiA2LjczMzM4TDE2LjcwNjUgNi44ODAwNUMxNi4zMTk4IDcuMTIwMDUgMTUuNjc5OCA3LjEyMDA1IDE1LjI5MzIgNi44ODAwNUwxNC45NTk4IDYuNjgwMDVDMTIuNTg2NSA1LjIwMDA1IDguMzQ2NSAzLjc4NjcyIDUuNTQ2NSAzLjU2MDA1QzMuOTU5ODQgMy40MjY3MiAyLjY2NjUgNC42MjY3MSAyLjY2NjUgNi4yMTMzOFYyMi4zMkMyLjY2NjUgMjMuNiAzLjcwNjUgMjQuOCA0Ljk4NjUgMjQuOTZMNS4zNzMxNyAyNS4wMTM0QzguMjY2NSAyNS40IDEyLjczMzIgMjYuODY2NyAxNS4yOTMyIDI4LjI2NjdMMTUuMzQ2NSAyOC4yOTM0QzE1LjcwNjUgMjguNDkzNCAxNi4yNzk4IDI4LjQ5MzQgMTYuNjI2NSAyOC4yOTM0QzE5LjE4NjUgMjYuODggMjMuNjY2NSAyNS40IDI2LjU3MzIgMjUuMDEzNEwyNy4wMTMyIDI0Ljk2QzI4LjI5MzIgMjQuOCAyOS4zMzMyIDIzLjYgMjkuMzMzMiAyMi4zMloiIHN0cm9rZT0iIzI5MkQzMiIgc3Ryb2tlLXdpZHRoPSIxLjUiIHN0cm9rZS1saW5lY2FwPSJyb3VuZCIgc3Ryb2tlLWxpbmVqb2luPSJyb3VuZCIvPgo8cGF0aCBkPSJNMTYgNy4zMTk5NVYyNy4zMTk5IiBzdHJva2U9IiMyOTJEMzIiIHN0cm9rZS13aWR0aD0iMS41IiBzdHJva2UtbGluZWNhcD0icm91bmQiIHN0cm9rZS1saW5lam9pbj0icm91bmQiLz4KPHBhdGggZD0iTTEwLjMzMzUgMTEuMzE5OUg3LjMzMzUiIHN0cm9rZT0iIzI5MkQzMiIgc3Ryb2tlLXdpZHRoPSIxLjUiIHN0cm9rZS1saW5lY2FwPSJyb3VuZCIgc3Ryb2tlLWxpbmVqb2luPSJyb3VuZCIvPgo8cGF0aCBkPSJNMTEuMzMzNSAxNS4zMTk5SDcuMzMzNSIgc3Ryb2tlPSIjMjkyRDMyIiBzdHJva2Utd2lkdGg9IjEuNSIgc3Ryb2tlLWxpbmVjYXA9InJvdW5kIiBzdHJva2UtbGluZWpvaW49InJvdW5kIi8+Cjwvc3ZnPgo=");
+        }
+      }
+      .about_teacher_value {
+        font-size: 16px;
+        font-weight: 500;
+        line-height: 19.36px;
+        color: $color-primary;
+      }
+    }
+  }
+
+  .student_eval_slider {
+    .title {
+      font-size: 24px;
+      font-weight: 700;
+      line-height: 32px;
+      color: black;
+      margin-bottom: 40px;
+      margin-top: 104px;
+    }
+    .nageeb-container {
+      padding-left: 52px;
+    }
+
+    .card {
+      border: 1.24px solid #ededed;
+      padding: 16px;
+      padding-right: 21px;
+      box-shadow: none;
+      .img_name_container {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        margin-bottom: 16px;
+        .student_pic_evaluatiou {
+          width: 80px;
+          height: 80px;
+          border-radius: 50%;
+        }
+      }
+      .evaluation_content {
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 24px;
+        color: #000000cc;
+      }
+    }
+  }
+}

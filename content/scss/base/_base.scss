@@ -1,10 +1,13 @@
-.center_flex{
-    display: flex;
-    justify-content: center;
-    align-items: center;
+.center_flex {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .mb_19 {
-    margin-bottom: 19px;
+  margin-bottom: 19px;
 }
 
+.text_primary {
+  color: $color-primary;
+}

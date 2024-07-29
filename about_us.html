@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Nageeb | Teacher Profile</title>
+    <title>Nageeb | About Us</title>
     <!-- Global bootstrap CDN V5.3.2 for ltr -->
     <link
       rel="stylesheet"
@@ -19,15 +19,8 @@
       crossorigin="anonymous"
     />
 
-    <!-- Additional CDN For Phone Number  -->
-    <link
-      rel="stylesheet"
-      href="https://cdn.tutorialjinni.com/intl-tel-input/17.0.19/css/intlTelInput.css"
-    />
-
     <!-- Global main css file for ltr  -->
     <link rel="stylesheet" href="./content/css/main-ltr.css" />
-    <style></style>
   </head>
 
   <body>
@@ -96,13 +89,7 @@
                 >
               </li>
               <li>
-                <a
-                  class="dropdown-item log_out_link"
-                  href="#"
-                  data-bs-toggle="modal"
-                  data-bs-target="#log_out_modal"
-                  >Log Out</a
-                >
+                <a class="dropdown-item log_out_link" href="#">Log Out</a>
               </li>
             </ul>
           </div>
@@ -197,13 +184,7 @@
                 >
               </li>
               <li>
-                <a
-                  class="dropdown-item log_out_link"
-                  href="#"
-                  data-bs-toggle="modal"
-                  data-bs-target="#log_out_modal"
-                  >Log Out</a
-                >
+                <a class="dropdown-item log_out_link" href="#">Log Out</a>
               </li>
             </ul>
           </div>
@@ -212,165 +193,170 @@
     </div>
 
     <main>
-      <section class="teacher_profile_page">
+      <section class="about_us_page">
         <div class="nageeb-container">
           <!-- start hero -->
-          <form action="">
-            <div class="text-center">
-              <img
-                class="w-100"
-                src="./content/assets/images/teacher_profile/teacher_profile_Hero Section.png"
-                alt="teacher_profile_Hero Section.png"
-              />
+          <div class="text-center requests_container">
+            <img
+              class="w-100 h-100"
+              src="./content/assets/images/teacher_profile/teacher_profile_Hero Section.png"
+              alt="teacher_profile_Hero Section.png"
+            />
+            <div class="requests_txt">
+              <p class="about_heading">About Us</p>
+              <p class="about_info">
+                Nageeb is an e-learning app that makes education fun and
+                accessible for kids with interactive lessons and activities.
+              </p>
             </div>
-            <div class="teacher_img_name_container">
-              <div class="position-relative">
-                <img
-                  class="teacher_img"
-                  src="./content/assets/images/teacher_profile/teacher_img.png"
-                  alt="teacher_img.png"
-                />
-                <input type="file" class="file_input" />
-              </div>
-
-              <div>
-                <p class="user_name">Mohamed MonGe</p>
-                <p class="user_role">Teacher</p>
-              </div>
-            </div>
-
-            <div class="form_container">
-              <div class="row">
-                <div class="col-md-6">
-                  <div class="input_group">
-                    <label for="fname">First Name</label>
-                    <input
-                      type="text"
-                      name="fname"
-                      id="fname"
-                      class="form_input"
-                    />
-                  </div>
-                </div>
-                <div class="col-md-6">
-                  <div class="input_group">
-                    <label for="lname">Last Name </label>
-                    <input
-                      type="text"
-                      name="lname"
-                      id="lname"
-                      class="form_input"
-                    />
-                  </div>
-                </div>
-              </div>
-              <div class="row">
-                <div class="col-md-6">
-                  <label for="Country">Country</label>
-                  <div class="input_group">
-                    <select class="form_input form-select" id="Country">
-                      <option selected disabled value="">
-                        select Your Country
-                      </option>
-                      <option value="1">Egypt 🇪🇬</option>
-                      <option value="2">Egypt 🇪🇬</option>
-                    </select>
-                  </div>
-                </div>
-                <div class="col-md-6">
-
-                  <label for="phone">Phone Number</label>
-
-                  <div class="w-100 input_group">
-                    <!-- fetch country code in hidden input (country__code) -->
-                    <label for="phone">Phone Number</label>
-
-                    <input
-                      type="number"
-                      value="1"
-                      hidden
-                      class="country__code"
-                    />
-                    <div
-                      class="d-flex align-items-center justify-content-start w-100"
-                      style="gap: 10px"
-                    >
-                      <input
-                        name="phone"
-                        class="form_input"
-                        type="number"
-                        id="phone"
-                      />
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div class="row">
-                <div class="col-md-6">
-                  <div class="input_group">
-                    <label for="education">Educational level</label>
-                    <select class="form_input form-select" id="education">
-                      <option selected disabled value="">
-                        select Your Educational level
-                      </option>
-                      <option value="1">Secondary 🇪</option>
-                      <option value="2">Secondary</option>
-                    </select>
-                  </div>
-                </div>
-
-                <div class="col-md-6">
-                  <div class="input_group">
-                    <label for="Subject">Subject</label>
-                    <input
-                      type="text"
-                      name="Subject"
-                      id="Subject"
-                      class="form_input"
-                    />
-                  </div>
-                </div>
-              </div>
-
-              <div class="row">
-                <div class="col-md-6">
-                  <div class="input_group">
-                    <label for="available_days"> Days available</label>
-                    <input
-                      type="text"
-                      name="available_days"
-                      id="available_days"
-                      class="form_input"
-                    />
-                  </div>
-                </div>
-
-                <div class="col-md-6">
-                  <div class="input_group">
-                    <label for="Description">Description</label>
-                    <textarea
-                      class="form_input text_area"
-                      name="Description"
-                      id="Description"
-                    ></textarea>
-                  </div>
-                </div>
-              </div>
-              <div class="btn_save_container">
-                <button class="global-btn btn_save">Save</button>
-              </div>
-            </div>
-          </form>
+          </div>
         </div>
+        <section class="who_is_nageeb">
+          <div class="nageeb-container">
+            <div class="row">
+              <div class="col-md-6">
+                <div class="imgs_container">
+                  <img
+                    class=""
+                    width="192"
+                    height="192"
+                    src="./content/assets/images/about_us/1.png"
+                    alt=""
+                  />
+                  <img
+                    width="275"
+                    height="228"
+                    src="./content/assets/images/about_us/2.png"
+                    alt=""
+                  />
+                  <img
+                    width="234"
+                    height="234"
+                    src="./content/assets/images/about_us/4.png"
+                    alt=""
+                  />
+                  <img
+                    width="275"
+                    height="263"
+                    src="./content/assets/images/about_us/3.png"
+                    alt=""
+                  />
+                </div>
+              </div>
+              <div class="col-md-6">
+                <h4 class="title">Who’s Nageeb?</h4>
+                <p class="subtitle">
+                  Nageeb is an innovative e-learning app designed to make
+                  education engaging and accessible for kids. It helps students
+                  book sessions with teachers and enables teachers to easily
+                  receive and manage these requests. Through interactive lessons
+                  and fun activities, Nageeb fosters a love for learning in
+                  every child.
+                </p>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section class="our_core">
+          <div class="nageeb-container">
+            <h4 class="title">Our Core Principles</h4>
+            <p class="subtitle">
+              Providing Tailored Learning Paths That Adapt to Each Student’s
+              Individual Learning Style and Pace
+            </p>
+            <div class="row">
+              <div class="col-sm-6 col-md-6 col-lg-4 col-xl-3">
+                <div class="card">
+                  <h5 class="card_title mission">Our Mission</h5>
+                  <p class="card_subtitle">
+                    To make education fun and accessible for kids through
+                    interactive and engaging e-learning experiences.
+                  </p>
+                </div>
+              </div>
+              <div class="col-sm-6 col-md-6 col-lg-4 col-xl-3">
+                <div class="card">
+                  <h5 class="card_title value">Our Value</h5>
+                  <p class="card_subtitle">
+                    Empowering every child with engaging and accessible learning
+                    experiences.
+                  </p>
+                </div>
+              </div>
+              <div class="col-sm-6 col-md-6 col-lg-4 col-xl-3">
+                <div class="card">
+                  <h5 class="card_title vision">Our Vision</h5>
+                  <p class="card_subtitle">
+                    To inspire a lifelong love of learning in every child
+                    through innovative and engaging e-learning solutions.
+                  </p>
+                </div>
+              </div>
+              <div class="col-sm-6 col-md-6 col-lg-4 col-xl-3">
+                <div class="card">
+                  <h5 class="card_title approach">Our Approach</h5>
+                  <p class="card_subtitle">
+                    Personalized, interactive, and secure learning experiences
+                    designed by experts.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section class="how_it_work">
+          <div class="nageeb-container">
+            <div class="row">
+              <div class="col-md-6 center_flex">
+                <div class="div_wrapper">
+                  <h4 class="title">
+                    How it works: <br />
+                    Downloading <span class="text_primary">Nageeb</span>
+                  </h4>
+                  <p class="subtitle">
+                    Discover the magic of Nageeb in just a few simple steps!
+                    Download the app and unlock a world where learning meets
+                    play. All designed to captivate young minds and make
+                    education an exciting journey.
+                  </p>
+                  <div class="btns_container">
+                    <a href="">
+                      <img
+                        src="./content/assets/images/about_us/google_play.png"
+                        alt="google_play.png"
+                      />
+                    </a>
+                    <a href="">
+                      <img
+                        src="./content/assets/images/about_us/Mobile App apple.png"
+                        alt="Mobile App apple.png"
+                      />
+                    </a>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-6 center_flex gy-4">
+                <div class="w-100">
+                  <img
+                    class="w-100"
+                    src="./content/assets/images/about_us/about_us_mob_screens.png"
+                    alt="about_us_mob_screens.png"
+                  />
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
       </section>
     </main>
+    <!-- modals -->
 
-    <!-- logout modal -->
+    <!-- start session  Modal   -->
     <div
-      class="modal fade cancel_modal log_out_modal"
-      id="log_out_modal"
+      class="modal fade cancel_modal start_session_modal"
+      id="start_session_modal"
       tabindex="-1"
-      aria-labelledby="log_out_modal"
+      aria-labelledby="start_session_modal"
       aria-hidden="true"
     >
       <div class="modal-dialog">
@@ -379,24 +365,125 @@
             <div class="gif_modal-container">
               <img
                 class="gif_img"
-                src="./content/assets/images/modals/log_out_gif.gif"
-                alt="log_out_gif.gif"
+                src="./content/assets/images/modals/start_session.gif"
+                alt="start_session.gif"
               />
             </div>
-            <p class="question_1">Are you sure to Log Out ?</p>
-            <p class="hint">Lorem ipsum dolor sit amet</p>
+            <p class="question_1">Are you sure to start session ?</p>
+            <p class="hint">Let’s start and gain a lot of experience 🚀</p>
             <div class="btns_container">
-              <button type="button" class="btn btn_cancel">Cancel</button>
+              <button
+                type="button"
+                class="btn btn_cancel"
+                data-bs-dismiss="modal"
+              >
+                Cancel
+              </button>
 
-              <button type="button" class="btn btn_cancel_request">
-                Log Out
+              <button type="button" class="btn btn_accept">
+                Start Session
               </button>
             </div>
           </div>
         </div>
       </div>
     </div>
-    <!-- logout modal -->
+    <!-- start session  Modal -->
+
+    <!-- start filter  Modal   -->
+    <div
+      class="modal fade cancel_modal filter_modal"
+      id="filter_modal"
+      tabindex="-1"
+      aria-labelledby="filter_modal"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog">
+        <div class="modal-content modal_container">
+          <div class="modal-body">
+            <h6 class="filter_for">Teachers filter</h6>
+            <div>
+              <h5 class="filter_by">Levels</h5>
+              <div class="levels_container">
+                <div class="choices">
+                  <div class="answer">
+                    <input id="answer-1" type="checkbox" />
+                    <label for="answer-1">Grades 1</label>
+                  </div>
+                  <div class="answer">
+                    <input id="answer-2" type="checkbox" />
+                    <label for="answer-2">Grades 2</label>
+                  </div>
+                  <div class="answer">
+                    <input id="answer-3" type="checkbox" />
+                    <label for="answer-3">Grades 3</label>
+                  </div>
+
+                  <div class="answer">
+                    <input id="answer-3" type="checkbox" />
+                    <label for="answer-3">Grades 4</label>
+                  </div>
+                  <div class="answer">
+                    <input id="answer-3" type="checkbox" />
+                    <label for="answer-3">Grades 4</label>
+                  </div>
+                  <div class="answer">
+                    <input id="answer-3" type="checkbox" />
+                    <label for="answer-3">Grades 4</label>
+                  </div>
+                  <div class="answer">
+                    <input id="answer-3" type="checkbox" />
+                    <label for="answer-3">Grades 4</label>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div>
+              <h5 class="filter_by">Subject</h5>
+              <div class="levels_container">
+                <div class="choices">
+                  <div class="answer">
+                    <input id="answer-1" type="checkbox" />
+                    <label for="answer-1">Biology</label>
+                  </div>
+                  <div class="answer">
+                    <input id="answer-2" type="checkbox" />
+                    <label for="answer-2"> Mathematics</label>
+                  </div>
+                  <div class="answer">
+                    <input id="answer-3" type="checkbox" />
+                    <label for="answer-3"> The Holy Quran</label>
+                  </div>
+
+                  <div class="answer">
+                    <input id="answer-3" type="checkbox" />
+                    <label for="answer-3"> English Language</label>
+                  </div>
+                  <div class="answer">
+                    <input id="answer-3" type="checkbox" />
+                    <label for="answer-3">Chemistry </label>
+                  </div>
+                  <div class="answer">
+                    <input id="answer-3" type="checkbox" />
+                    <label for="answer-3"> Computer</label>
+                  </div>
+                  <div class="answer">
+                    <input id="answer-3" type="checkbox" />
+                    <label for="answer-3">Arabic </label>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <button type="button" class="btn btn_accept w-100 btn_filter">
+              Filter
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- start filter  Modal -->
+
     <!-- start footer -->
     <footer class="footer">
       <div class="footer-container">
@@ -496,6 +583,7 @@
       integrity="sha512-X/YkDZyjTf4wyc2Vy16YGCPHwAY8rZJY+POgokZjQB2mhIRFJCckEGc6YyX9eNsPfn0PzThEuNs+uaomE5CO6A=="
       crossorigin="anonymous"
     ></script>
+
     <!-- Global Font Awesome CDN V6.5.1 -->
     <script
       src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/js/all.min.js"
@@ -503,10 +591,6 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     ></script>
-    <script src="https://cdn.tutorialjinni.com/intl-tel-input/17.0.19/js/intlTelInput.min.js"></script>
-
-    <script src="./content/js/phone-number-init.js"></script>
-
     <!-- Global general Js File -->
     <script src="./content/js/general.js"></script>
   </body>
