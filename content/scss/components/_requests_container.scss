@@ -1,6 +1,7 @@
 .requests_container {
     position: relative;
     margin-bottom: 80px;
+    height: 290px;
     @include responsive (max,425px){
       margin-bottom: 10px;
       height: 170px;

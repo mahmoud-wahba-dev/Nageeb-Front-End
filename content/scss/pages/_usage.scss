@@ -1,0 +1,230 @@
+.usage_page {
+  .hero {
+    background-image: url("/content/assets/images/teacher_profile/teacher_profile_Hero\ Section.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    // min-height: 441px;
+    border-radius: 30px;
+    h1 {
+      font-size: 48px;
+      font-weight: 700;
+      line-height: 58.09px;
+      color: white;
+      margin-bottom: 16px;
+    }
+    .subtitle {
+      font-size: 24px;
+      font-weight: 400;
+      line-height: 36px;
+      color: white;
+      margin-bottom: 40px;
+      max-width: 55%;
+      @include responsive(max, 425px) {
+        max-width: 100%;
+      }
+    }
+    .text_container {
+      padding-top: 85px;
+      padding-bottom: 85px;
+      padding-left: 48px;
+
+      @include responsive(max, 425px) {
+        padding-right: 40px;
+      }
+    }
+    .balance {
+      width: 53%;
+      height: 86px;
+      padding: 20px;
+      border-radius: 10px;
+      background-color: $color-secondary;
+      display: flex;
+      align-items: center;
+      gap: 16px;
+      @include responsive(max, 425px) {
+        width: 100%;
+      }
+
+      .subtitle {
+        font-size: 12px;
+        font-weight: 400;
+        line-height: 14.52px;
+        color: $black-par;
+        margin-bottom: 12px;
+      }
+      .hours {
+        font-size: 24px;
+        font-weight: 700;
+        line-height: 32px;
+        color: $color-primary;
+      }
+    }
+    .hero_right_img {
+      width: 100%;
+      @include responsive(max, 425px) {
+        display: none;
+      }
+    }
+  }
+
+  .title {
+    font-size: 32px;
+    font-weight: 700;
+    line-height: 38.73px;
+    color: $black-par;
+    margin-bottom: 47px;
+
+    @include responsive(max, 768px) {
+      font-size: 26px;
+    }
+  }
+  .bundle {
+    border-radius: 12px;
+    border: 1.98px solid #d9d9d9;
+    padding: 27px 24px;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 31px;
+    position: relative;
+    max-width: 550px;
+
+    &:has(input:checked) {
+      border: 1.98px solid #8d29d9;
+    }
+
+    .bundle_hrs {
+      font-size: 24px;
+      font-weight: 500;
+      line-height: 29.05px;
+      color: $black-par;
+    }
+
+    .bundle_price {
+      font-size: 24px;
+      font-weight: 700;
+      line-height: 32px;
+      color: $color-primary;
+    }
+
+    .radio_inpt {
+      border: 1px solid;
+      width: 100%;
+      height: 100%;
+      position: absolute;
+      inset: 0;
+      max-width: 100%;
+      cursor: pointer;
+      opacity: 0;
+    }
+  }
+  .payment {
+    max-width: 550px;
+    //   height: 88px;
+    border-radius: 12px;
+    border: 2px solid #d9d9d9;
+    margin-bottom: 32px;
+    display: flex;
+    align-items: center;
+    gap: 32px;
+    padding: 18px 24px;
+    padding-left: 48px;
+    padding-right: 32px;
+    position: relative;
+    @include responsive(max, 425px) {
+      padding-right: 20px;
+      padding-left: 20px;
+    }
+
+    &::after {
+      content: url("data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNDQiIGhlaWdodD0iNDQiIHZpZXdCb3g9IjAgMCA0NCA0NCIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPHBhdGggZmlsbC1ydWxlPSJldmVub2RkIiBjbGlwLXJ1bGU9ImV2ZW5vZGQiIGQ9Ik0yMiAzLjVDMTEuNzgyNyAzLjUgMy41IDExLjc4MjcgMy41IDIyQzMuNSAzMi4yMTczIDExLjc4MjcgNDAuNSAyMiA0MC41QzMyLjIxNzMgNDAuNSA0MC41IDMyLjIxNzMgNDAuNSAyMkM0MC41IDExLjc4MjcgMzIuMjE3MyAzLjUgMjIgMy41Wk0wLjUgMjJDMC41IDEwLjEyNTkgMTAuMTI1OSAwLjUgMjIgMC41QzMzLjg3NDEgMC41IDQzLjUgMTAuMTI1OSA0My41IDIyQzQzLjUgMzMuODc0MSAzMy44NzQxIDQzLjUgMjIgNDMuNUMxMC4xMjU5IDQzLjUgMC41IDMzLjg3NDEgMC41IDIyWiIgZmlsbD0iI0Q5RDlEOSIvPgo8L3N2Zz4K");
+      position: absolute;
+      #{$e}: 5%;
+    }
+    &:has(input:checked) {
+      border: 2px solid #8d29d9;
+
+      &::after {
+        content: url("data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNDgiIGhlaWdodD0iNDgiIHZpZXdCb3g9IjAgMCA0OCA0OCIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPHBhdGggZmlsbC1ydWxlPSJldmVub2RkIiBjbGlwLXJ1bGU9ImV2ZW5vZGQiIGQ9Ik0yNCA1LjVDMTMuNzgyNyA1LjUgNS41IDEzLjc4MjcgNS41IDI0QzUuNSAzNC4yMTczIDEzLjc4MjcgNDIuNSAyNCA0Mi41QzM0LjIxNzMgNDIuNSA0Mi41IDM0LjIxNzMgNDIuNSAyNEM0Mi41IDEzLjc4MjcgMzQuMjE3MyA1LjUgMjQgNS41Wk0yLjUgMjRDMi41IDEyLjEyNTkgMTIuMTI1OSAyLjUgMjQgMi41QzM1Ljg3NDEgMi41IDQ1LjUgMTIuMTI1OSA0NS41IDI0QzQ1LjUgMzUuODc0MSAzNS44NzQxIDQ1LjUgMjQgNDUuNUMxMi4xMjU5IDQ1LjUgMi41IDM1Ljg3NDEgMi41IDI0WiIgZmlsbD0iIzhEMjlEOSIvPgo8Y2lyY2xlIGN4PSIyNCIgY3k9IjI0IiByPSIxMyIgZmlsbD0iIzhEMjlEOSIvPgo8L3N2Zz4K");
+      }
+    }
+
+    .payment_card_no {
+      font-size: 24px;
+      font-weight: 500;
+      line-height: 29.05px;
+      color: $black-par;
+      flex: 1;
+
+      @include responsive(max, 768px) {
+        font-size: 16px;
+      }
+      @include responsive(max, 320px) {
+        font-size: 14px;
+      }
+    }
+
+    .radio_inpt {
+      position: absolute;
+      inset: 0;
+      max-width: 100%;
+      opacity: 0;
+      cursor: pointer;
+    }
+  }
+  .promo {
+    margin-bottom: 79px;
+    .promo_code {
+      width: 22%;
+      @include responsive(max, 768px) {
+        width: 30%;
+      }
+      @include responsive(max, 425px) {
+        width: 60%;
+      }
+    }
+    .promo_input_container {
+      display: flex;
+      align-items: center;
+      gap: 15px;
+    }
+    .btn_promo {
+      width: 116.68px;
+      height: 63.29px;
+      border-radius: 8px;
+      border: 0.99px solid $color-primary;
+      font-family: Inter;
+      font-size: 15.82px;
+      font-weight: 700;
+      line-height: 19.15px;
+      text-align: center;
+      color: $color-primary;
+      padding: 21px 34px;
+      &:hover {
+        color: white;
+        background-color: $color-primary;
+      }
+    }
+    .title {
+      font-size: 15.82px;
+      font-weight: 700;
+      line-height: 19.15px;
+      color: #000000cc;
+      margin-bottom: 15px;
+    }
+  }
+
+  .btn_buy {
+    width: 80%;
+    margin: auto;
+    font-size: 24px;
+    font-weight: 600;
+    line-height: 29.05px;
+    padding: 18px;
+    background-color: $color-primary;
+    color: white;
+  }
+
+  .btn:first-child:active {
+    color: $color-primary;
+  }
+}

@@ -3,7 +3,13 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Nageeb | Teacher Profile</title>
+    <title>Nageeb | Usage</title>
+
+    <!-- Additional CDN For Phone Number  -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.tutorialjinni.com/intl-tel-input/17.0.19/css/intlTelInput.css"
+    />
     <!-- Global bootstrap CDN V5.3.2 for ltr -->
     <link
       rel="stylesheet"
@@ -19,15 +25,8 @@
       crossorigin="anonymous"
     />
 
-    <!-- Additional CDN For Phone Number  -->
-    <link
-      rel="stylesheet"
-      href="https://cdn.tutorialjinni.com/intl-tel-input/17.0.19/css/intlTelInput.css"
-    />
-
     <!-- Global main css file for ltr  -->
     <link rel="stylesheet" href="./content/css/main-ltr.css" />
-    <style></style>
   </head>
 
   <body>
@@ -96,13 +95,7 @@
                 >
               </li>
               <li>
-                <a
-                  class="dropdown-item log_out_link"
-                  href="#"
-                  data-bs-toggle="modal"
-                  data-bs-target="#log_out_modal"
-                  >Log Out</a
-                >
+                <a class="dropdown-item log_out_link" href="#">Log Out</a>
               </li>
             </ul>
           </div>
@@ -197,13 +190,7 @@
                 >
               </li>
               <li>
-                <a
-                  class="dropdown-item log_out_link"
-                  href="#"
-                  data-bs-toggle="modal"
-                  data-bs-target="#log_out_modal"
-                  >Log Out</a
-                >
+                <a class="dropdown-item log_out_link" href="#">Log Out</a>
               </li>
             </ul>
           </div>
@@ -212,191 +199,131 @@
     </div>
 
     <main>
-      <section class="teacher_profile_page">
-        <div class="nageeb-container">
-          <!-- start hero -->
-          <form action="">
-            <div class="text-center">
-              <img
-                class="w-100"
-                src="./content/assets/images/teacher_profile/teacher_profile_Hero Section.png"
-                alt="teacher_profile_Hero Section.png"
-              />
-            </div>
-            <div class="teacher_img_name_container">
-              <div class="position-relative">
-                <img
-                  class="teacher_img"
-                  src="./content/assets/images/teacher_profile/teacher_img.png"
-                  alt="teacher_img.png"
-                />
-                <input type="file" class="file_input" />
-              </div>
-
-              <div>
-                <p class="user_name">Mohamed MonGe</p>
-                <p class="user_role">Teacher</p>
-              </div>
-            </div>
-
-            <div class="form_container">
+      <section class="usage_page">
+        <section>
+          <div class="nageeb-container">
+            <!-- start hero -->
+            <div class="hero">
               <div class="row">
-                <div class="col-md-6">
-                  <div class="input_group">
-                    <label for="fname">First Name</label>
-                    <input
-                      type="text"
-                      name="fname"
-                      id="fname"
-                      class="form_input"
-                    />
-                  </div>
-                </div>
-                <div class="col-md-6">
-                  <div class="input_group">
-                    <label for="lname">Last Name </label>
-                    <input
-                      type="text"
-                      name="lname"
-                      id="lname"
-                      class="form_input"
-                    />
-                  </div>
-                </div>
-              </div>
-              <div class="row">
-                <div class="col-md-6">
-                  <label for="Country">Country</label>
-                  <div class="input_group">
-                    <select class="form_input form-select" id="Country">
-                      <option selected disabled value="">
-                        select Your Country
-                      </option>
-                      <option value="1">Egypt 🇪🇬</option>
-                      <option value="2">Egypt 🇪🇬</option>
-                    </select>
-                  </div>
-                </div>
-                <div class="col-md-6">
-
-                  <label for="phone">Phone Number</label>
-
-                  <div class="w-100 input_group">
-                    <!-- fetch country code in hidden input (country__code) -->
-                    <label for="phone">Phone Number</label>
-
-                    <input
-                      type="number"
-                      value="1"
-                      hidden
-                      class="country__code"
-                    />
-                    <div
-                      class="d-flex align-items-center justify-content-start w-100"
-                      style="gap: 10px"
-                    >
-                      <input
-                        name="phone"
-                        class="form_input"
-                        type="number"
-                        id="phone"
+                <div class="col-md-8">
+                  <div class="text_container">
+                    <h1>Bundles</h1>
+                    <p class="subtitle">
+                      Discover bundle options and purchase the best one to begin
+                      your journey🚀
+                    </p>
+                    <div class="balance">
+                      <img
+                        src="./content/assets/images/usage/balance_icon_dollar.png"
+                        alt="balance_icon_dollar.png"
                       />
+                      <div class="w-100">
+                        <p class="subtitle">Your current balance</p>
+                        <span class="hours">10 Hours</span>
+                      </div>
                     </div>
                   </div>
                 </div>
-              </div>
-              <div class="row">
-                <div class="col-md-6">
-                  <div class="input_group">
-                    <label for="education">Educational level</label>
-                    <select class="form_input form-select" id="education">
-                      <option selected disabled value="">
-                        select Your Educational level
-                      </option>
-                      <option value="1">Secondary 🇪</option>
-                      <option value="2">Secondary</option>
-                    </select>
-                  </div>
+                <div class="col-md-4 center_flex">
+                  <img
+                    class="hero_right_img"
+                    src="./content/assets/images/usage/usage_hero_img_right.png"
+                    alt="usage_hero_img_right.png"
+                  />
                 </div>
-
-                <div class="col-md-6">
-                  <div class="input_group">
-                    <label for="Subject">Subject</label>
-                    <input
-                      type="text"
-                      name="Subject"
-                      id="Subject"
-                      class="form_input"
-                    />
-                  </div>
-                </div>
-              </div>
-
-              <div class="row">
-                <div class="col-md-6">
-                  <div class="input_group">
-                    <label for="available_days"> Days available</label>
-                    <input
-                      type="text"
-                      name="available_days"
-                      id="available_days"
-                      class="form_input"
-                    />
-                  </div>
-                </div>
-
-                <div class="col-md-6">
-                  <div class="input_group">
-                    <label for="Description">Description</label>
-                    <textarea
-                      class="form_input text_area"
-                      name="Description"
-                      id="Description"
-                    ></textarea>
-                  </div>
-                </div>
-              </div>
-              <div class="btn_save_container">
-                <button class="global-btn btn_save">Save</button>
               </div>
             </div>
-          </form>
-        </div>
+          </div>
+        </section>
+        <section>
+          <div class="nageeb-container">
+            <form action="">
+              <div class="row">
+                <div class="col-md-6">
+                  <h4 class="title">Explore Bundles</h4>
+                  <div class="bundle">
+                    <input class="radio_inpt" type="radio" />
+                    <span class="bundle_hrs">2 Hours</span>
+                    <span class="bundle_price">100 KAR</span>
+                  </div>
+                  <div class="bundle">
+                    <input class="radio_inpt" type="radio" />
+                    <span class="bundle_hrs">2 Hours</span>
+                    <span class="bundle_price">100 KAR</span>
+                  </div>
+
+                  <div class="bundle">
+                    <input class="radio_inpt" type="radio" />
+                    <span class="bundle_hrs">2 Hours</span>
+                    <span class="bundle_price">100 KAR</span>
+                  </div>
+
+                  <div class="bundle">
+                    <input class="radio_inpt" type="radio" />
+                    <span class="bundle_hrs">2 Hours</span>
+                    <span class="bundle_price">100 KAR</span>
+                  </div>
+                  <div class="bundle">
+                    <input class="radio_inpt" type="radio" />
+                    <span class="bundle_hrs">2 Hours</span>
+                    <span class="bundle_price">100 KAR</span>
+                  </div>
+                </div>
+                <div class="col-md-6">
+                  <h4 class="title">Choose Payment Method</h4>
+
+                  <div class="payment">
+                    <img
+                      src="./content/assets/images/usage/Payment Logo.png"
+                      alt="Payment Logo.png"
+                    />
+                    <span class="payment_card_no">**** **** **** 0895</span>
+                    <input class="radio_inpt" type="radio" />
+                  </div>
+
+                  <div class="payment">
+                    <img
+                      src="./content/assets/images/usage/Payment Logo.png"
+                      alt="Payment Logo.png"
+                    />
+                    <span class="payment_card_no">**** **** **** 0895</span>
+                    <input class="radio_inpt" type="radio" />
+                  </div>
+                  <div class="payment">
+                    <img
+                      src="./content/assets/images/usage/Payment Logo.png"
+                      alt="Payment Logo.png"
+                    />
+                    <span class="payment_card_no">**** **** **** 0895</span>
+                    <input class="radio_inpt" type="radio" />
+                  </div>
+                </div>
+              </div>
+              <div class="promo">
+                <label for="promo_code" class="title">Promo Code</label>
+                <div class="promo_input_container">
+                  <input
+                    id="promo_code"
+                    type="text"
+                    class="form_input promo_code"
+                  />
+                  <button
+                    type="button"
+                    class="btn btn-outline-primary btn_promo"
+                  >
+                    Active
+                  </button>
+                </div>
+              </div>
+              <div class="text-center">
+                <button class="btn btn_buy">Buy</button>
+              </div>
+            </form>
+          </div>
+        </section>
       </section>
     </main>
 
-    <!-- logout modal -->
-    <div
-      class="modal fade cancel_modal log_out_modal"
-      id="log_out_modal"
-      tabindex="-1"
-      aria-labelledby="log_out_modal"
-      aria-hidden="true"
-    >
-      <div class="modal-dialog">
-        <div class="modal-content modal_container">
-          <div class="modal-body">
-            <div class="gif_modal-container">
-              <img
-                class="gif_img"
-                src="./content/assets/images/modals/log_out_gif.gif"
-                alt="log_out_gif.gif"
-              />
-            </div>
-            <p class="question_1">Are you sure to Log Out ?</p>
-            <p class="hint">Lorem ipsum dolor sit amet</p>
-            <div class="btns_container">
-              <button type="button" class="btn btn_cancel">Cancel</button>
-
-              <button type="button" class="btn btn_cancel_request">
-                Log Out
-              </button>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-    <!-- logout modal -->
     <!-- start footer -->
     <footer class="footer">
       <div class="footer-container">
@@ -496,6 +423,7 @@
       integrity="sha512-X/YkDZyjTf4wyc2Vy16YGCPHwAY8rZJY+POgokZjQB2mhIRFJCckEGc6YyX9eNsPfn0PzThEuNs+uaomE5CO6A=="
       crossorigin="anonymous"
     ></script>
+
     <!-- Global Font Awesome CDN V6.5.1 -->
     <script
       src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/js/all.min.js"
@@ -503,10 +431,10 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     ></script>
+
     <script src="https://cdn.tutorialjinni.com/intl-tel-input/17.0.19/js/intlTelInput.min.js"></script>
 
     <script src="./content/js/phone-number-init.js"></script>
-
     <!-- Global general Js File -->
     <script src="./content/js/general.js"></script>
   </body>

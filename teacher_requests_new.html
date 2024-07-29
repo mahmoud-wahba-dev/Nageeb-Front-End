@@ -277,7 +277,7 @@
 
     <!-- cancel  Modal     -->
     <div
-      class="modal fade cancel_modal "
+      class="modal fade cancel_modal"
       id="cancel_modal"
       tabindex="-1"
       aria-labelledby="cancel_modal"
@@ -296,7 +296,13 @@
             <p class="question_1">Are you sure to cancel the request?</p>
             <p class="hint">Think carefully before canceling the order</p>
             <div class="btns_container">
-              <button type="button" class="btn btn_cancel">Cancel</button>
+              <button
+                type="button"
+                class="btn btn_cancel"
+                data-bs-dismiss="modal"
+              >
+                Cancel
+              </button>
 
               <button type="button" class="btn btn_cancel_request">
                 Cancel Request
@@ -329,11 +335,15 @@
             <p class="question_1">Are you sure to Accept the request?</p>
             <p class="hint">Let’s start and gain a lot of experience 🚀</p>
             <div class="btns_container">
-              <button type="button" class="btn btn_cancel">Cancel</button>
-
-              <button type="button" class="btn btn_accept">
-                Accept
+              <button
+                type="button"
+                class="btn btn_cancel"
+                data-bs-dismiss="modal"
+              >
+                Cancel
               </button>
+
+              <button type="button" class="btn btn_accept">Accept</button>
             </div>
           </div>
         </div>
