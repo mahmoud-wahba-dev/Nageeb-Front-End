@@ -2,7 +2,7 @@
   .nageeb-container {
     padding-top: 16px;
     padding-left: 52px;
-    @include responsive(max,425px){
+    @include responsive(max, 425px) {
       padding: 16px;
     }
   }
@@ -213,6 +213,75 @@
         line-height: 24px;
         color: #000000cc;
       }
+    }
+  }
+}
+
+// evaluation slider style
+.owl-carousel .owl-nav button.owl-next,
+.owl-carousel .owl-nav button.owl-prev {
+  font-size: 60px;
+  color: #000000cc;
+  font-weight: 600;
+  display: flex !important;
+  justify-content: center;
+  align-items: center;
+  width: 40px;
+  height: 40px;
+}
+.owl-nav {
+  position: absolute;
+  top: -30%;
+  right: 3%;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  @include responsive(max, 320px) {
+    position: initial;
+    width: fit-content;
+    margin: 1rem auto;
+  }
+}
+.owl-carousel button.owl-dot {
+  background: red;
+  border: 2px solid green;
+  border: none;
+}
+
+.owl-next {
+  color: $color-primary !important;
+}
+
+
+.owl-dots {
+  display: inline-block !important;
+  position: absolute;
+  bottom: -43px;
+  #{$s}: 50%;
+  transform: translateX(-1 * 50%);
+  border-radius: 4rem;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 4px 8px;
+
+  .owl-dot {
+    border: 1px solid transparent;
+    padding: 10px;
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    opacity: 0.5;
+    background-color: #cccccc !important;
+    transition: all 0.3s ease-in-out;
+    margin-inline: 5px;
+
+    &.active {
+      width: 48px;
+      height: 12px;
+      border-radius: 6px;
+      opacity: 1;
+      background-color: $color_primary !important;
     }
   }
 }

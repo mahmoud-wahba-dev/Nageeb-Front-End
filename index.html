@@ -1,428 +1,870 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Nageeb | Home</title>
     <!-- Global bootstrap CDN V5.3.2 for ltr -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.2/css/bootstrap.min.css"
-        integrity="sha512-b2QcS5SsA8tZodcDtGRELiGv5SaKSk1vDHDaQRda0htPYWZ6046lr3kJ5bAAQdpV2mmA/4v0wQF9MyU6/pDIAg=="
-        crossorigin="anonymous" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.2/css/bootstrap.min.css"
+      integrity="sha512-b2QcS5SsA8tZodcDtGRELiGv5SaKSk1vDHDaQRda0htPYWZ6046lr3kJ5bAAQdpV2mmA/4v0wQF9MyU6/pDIAg=="
+      crossorigin="anonymous"
+    />
     <!-- Global Font Awesome CDN V6.4.2  -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
-        integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
-        crossorigin="anonymous" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+      integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+      crossorigin="anonymous"
+    />
 
     <!-- Additional Owl Carousel CDN V2.3.4  -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"
-        integrity="sha512-tS3S5qG0BlhnQROyJXvNjeEM4UpMXHrQfTGmbQ1gKmelCxlSEBUaxhRBj/EFTzpbP4RVSrpEikbmdJobCvhE3g=="
-        crossorigin="anonymous" />
-    <link rel="stylesheet"
-        href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css"
-        integrity="sha512-sMXtMNL1zRzolHYKEujM2AqCLUR9F2C4/05cdbxjjLSRvMQIciEPCQZo++nk7go3BtSuK9kfa/s+a4f4i5pLkw=="
-        crossorigin="anonymous" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"
+      integrity="sha512-tS3S5qG0BlhnQROyJXvNjeEM4UpMXHrQfTGmbQ1gKmelCxlSEBUaxhRBj/EFTzpbP4RVSrpEikbmdJobCvhE3g=="
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css"
+      integrity="sha512-sMXtMNL1zRzolHYKEujM2AqCLUR9F2C4/05cdbxjjLSRvMQIciEPCQZo++nk7go3BtSuK9kfa/s+a4f4i5pLkw=="
+      crossorigin="anonymous"
+    />
+    <!-- Aos animation -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+    <!-- Aos animation -->
 
     <!-- Global main css file for ltr  -->
-    <link rel="stylesheet" href="./content/css/main-ltr.css">
-</head>
+    <link rel="stylesheet" href="./content/css/main-ltr.css" />
+  </head>
 
-<body>
-
+  <body>
     <!-- start navbar -->
     <nav>
-        <div class="navbar">
-            <div class="navbar__logo">
-                <img src="./content/assets/images/general/logo.png" alt="">
-            </div>
-            <ul class="navbar__links">
-                <li class="active"><a href="index.html">
-                        Home
-                    </a></li>
-                <li><a href="teachers.html">
-                        Teachers
-                    </a></li>
-            </ul>
-            <div class="navbar__features">
-                <div class="upperbar__language">
-                    <img src="./content/assets/images/general/en.png" alt="">
-                    English
-                    <ul class="upperbar__language__list">
-                        <li>
-                            <a href="#" class="active">
-                                <img src="./content/assets/images/general/en.png" alt="">
-                                English
-                            </a>
-                        </li>
-                        <li>
-                            <a href="#">
-                                <img src="./content/assets/images/general/ar.png" alt="">
-                                Arabic
-                            </a>
-                        </li>
-                    </ul>
-                </div>
-                <button class="navbar__features__search">
-                    <img src="./content/assets/images/general/search.svg" alt="">
-                </button>
-                <a href="signin.html" class="navbar__features__signin">
-                    Sign In
-                </a>
-                <a href="signup.html" class="navbar__features__signup">
-                    Sign Up
-                </a>
-            </div>
-            <button class="navbar__toogler border-0 outline-0 bg-transparent" type="button" data-bs-toggle="offcanvas"
-                data-bs-target="#offcanvasRight" aria-controls="offcanvasRight">
-                <i class="fa-solid fa-bars-staggered fs-3" style="color: #8D29D9;"></i>
-            </button>
+      <div class="navbar">
+        <div class="navbar__logo">
+          <img src="./content/assets/images/general/logo.png" alt="" />
         </div>
+        <ul class="navbar__links">
+          <li class="active"><a href="index.html"> Home </a></li>
+          <li><a href="teachers.html"> Teachers </a></li>
+        </ul>
+        <div class="navbar__features">
+          <div class="upperbar__language">
+            <img src="./content/assets/images/general/en.png" alt="" />
+            English
+            <ul class="upperbar__language__list">
+              <li>
+                <a href="#" class="active">
+                  <img src="./content/assets/images/general/en.png" alt="" />
+                  English
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <img src="./content/assets/images/general/ar.png" alt="" />
+                  Arabic
+                </a>
+              </li>
+            </ul>
+          </div>
+          <button class="navbar__features__search">
+            <img src="./content/assets/images/general/search.svg" alt="" />
+          </button>
+          <a href="signin.html" class="navbar__features__signin"> Sign In </a>
+          <a href="signup.html" class="navbar__features__signup"> Sign Up </a>
+        </div>
+        <button
+          class="navbar__toogler border-0 outline-0 bg-transparent"
+          type="button"
+          data-bs-toggle="offcanvas"
+          data-bs-target="#offcanvasRight"
+          aria-controls="offcanvasRight"
+        >
+          <i class="fa-solid fa-bars-staggered fs-3" style="color: #8d29d9"></i>
+        </button>
+      </div>
     </nav>
 
     <!-- navbar responsive -->
-    <div class="offcanvas offcanvas-end navbar-responsive" tabindex="-1" id="offcanvasRight"
-        aria-labelledby="offcanvasRightLabel">
-        <div class="offcanvas-header">
-            <div class="logo">
-                <img src="./content/assets/images/general/logo.png" alt="">
-            </div>
-            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+    <div
+      class="offcanvas offcanvas-end navbar-responsive"
+      tabindex="-1"
+      id="offcanvasRight"
+      aria-labelledby="offcanvasRightLabel"
+    >
+      <div class="offcanvas-header">
+        <div class="logo">
+          <img src="./content/assets/images/general/logo.png" alt="" />
         </div>
-        <div class="offcanvas-body">
-            <div class="links">
-                <ul>
-                    <li class="active"><a href="index.html">
-                            Home
-                        </a></li>
-                    <li><a href="teachers.html">
-                            Teachers
-                        </a></li>
-                </ul>
-            </div>
-            <div class="lang">
-                <a href="#">
-                    <img src="./content/assets/images/general/en.png" alt="">
-                </a>
-            </div>
-            <div class="mt-5 d-flex align-items-center justify-content-around gap-2 w-100">
-                <a href="signin.html" class="navbar__features__signin w-25">
-                    Sign In
-                </a>
-                <a href="signup.html" class="navbar__features__signup w-50">
-                    Sign Up
-                </a>
-            </div>
+        <button
+          type="button"
+          class="btn-close"
+          data-bs-dismiss="offcanvas"
+          aria-label="Close"
+        ></button>
+      </div>
+      <div class="offcanvas-body">
+        <div class="links">
+          <ul>
+            <li class="active"><a href="index.html"> Home </a></li>
+            <li><a href="teachers.html"> Teachers </a></li>
+          </ul>
         </div>
+        <div class="lang">
+          <a href="#">
+            <img src="./content/assets/images/general/en.png" alt="" />
+          </a>
+        </div>
+        <div
+          class="mt-5 d-flex align-items-center justify-content-around gap-2 w-100"
+        >
+          <a href="signin.html" class="navbar__features__signin w-25">
+            Sign In
+          </a>
+          <a href="signup.html" class="navbar__features__signup w-50">
+            Sign Up
+          </a>
+        </div>
+      </div>
     </div>
 
     <main>
-        <!-- start hero -->
-        <section>
-            <div class="nageeb-container home-hero">
-                <div class="home-hero__content">
-                    <h1 class="home-hero__content__header">
-                        Experience Education like never before with our dynamic lessons.
-                    </h1>
-                    <p class="home-hero__content__desc">
-                        Schedule sessions with teachers to boost your understanding and performance.
-                    </p>
-                    <div class="home-hero__content__details">
-                        <a href="teachers.html" class="global-btn">
-                            Browse Our Teachers 🚀
-                        </a>
-                        <p class="desc">
-                            Join to +10K student in Qatar
-                        </p>
-                        <div class="images">
-                            <img src="./content/assets/images/home/1.svg" alt="">
-                            <img src="./content/assets/images/home/2.svg" alt="">
-                            <img src="./content/assets/images/home/3.svg" alt="">
-                            <img src="./content/assets/images/home/4.svg" alt="">
-                        </div>
-                    </div>
-                </div>
-                <div class="home-hero__image">
-                    <div class="image1">
-                        <img src="./content/assets/images/home/hero.png" alt="">
-                    </div>
-                    <div class="image2">
-                        <img src="./content/assets/images/home/bg.png" alt="">
-                    </div>
-                </div>
+      <!-- searh section -->
+      <div class="search_container">
+        <form class="center_form" action="#">
+          <div class="input_icon_container">
+            <input class="search_input" type="search" placeholder="Search" />
+          </div>
+        </form>
+      </div>
+      <!-- searh section -->
+      <!-- start hero -->
+      <section>
+        <div class="nageeb-container home-hero">
+          <div class="home-hero__content">
+            <h1
+              class="home-hero__content__header"
+              data-aos="fade-down"
+              data-aos-duration="2000"
+            >
+              Experience Education like never before with our dynamic lessons.
+            </h1>
+            <p
+              class="home-hero__content__desc"
+              data-aos="fade-left"
+              data-aos-duration="2000"
+            >
+              Schedule sessions with teachers to boost your understanding and
+              performance.
+            </p>
+            <div class="home-hero__content__details">
+              <a href="teachers.html" class="global-btn">
+                Browse Our Teachers 🚀
+              </a>
+              <p class="desc">Join to +10K student in Qatar</p>
+              <div class="images">
+                <img src="./content/assets/images/home/1.svg" alt="" />
+                <img src="./content/assets/images/home/2.svg" alt="" />
+                <img src="./content/assets/images/home/3.svg" alt="" />
+                <img src="./content/assets/images/home/4.svg" alt="" />
+              </div>
             </div>
-        </section>
-
-        <!-- start filter -->
-        <section>
-            <div class="home-filter nageeb-container">
-                <div class="home-filter__header">
-                    <h2 class="home-filter__header__head">
-                        Start Your Learning Journey
-                    </h2>
-                    <p class="home-filter__header__desc">
-                        we’re committed to making learning an exciting adventure. Dive into our interactive lessons,
-                        discover new passions, and reach your academic goals with confidence.
-                    </p>
-                </div>
-                <div class="home-filter__container">
-                    <div class="home-filter__container__card">
-                        <a href="" class="home-filter__container__card__image">
-                            <img src="./content/assets/images/home/quran.svg" alt="">
-                        </a>
-                        <div class="home-filter__container__card__content">
-                            <h3 class="head">Quran Kareem Learners</h3>
-                            <p class="desc">Find a teacher to deepen your understanding of the Quran.</p>
-                            <a class="link" href="./teachers.html">Browse Your Teacher</a>
-                        </div>
-                    </div>
-                    <div class="home-filter__container__card">
-                        <a href="" class="home-filter__container__card__image">
-                            <img src="./content/assets/images/home/school.svg" alt="">
-                        </a>
-                        <div class="home-filter__container__card__content">
-                            <h3 class="head">Quran Kareem Learners</h3>
-                            <p class="desc">Find a teacher to deepen your understanding of the Quran.</p>
-                            <a class="link" href="./teachers.html">Browse Your Teacher</a>
-                        </div>
-                    </div>
-                </div>
+          </div>
+          <div class="home-hero__image">
+            <div class="image1">
+              <img
+                data-aos="fade-left"
+                data-aos-duration="2000"
+                src="./content/assets/images/home/hero_svg.svg"
+                alt=""
+              />
             </div>
-        </section>
-
-        <!-- start who is nageeb -->
-        <section>
-            <div class="home-filter nageeb-container">
-                <div class="home-filter__header">
-                    <h2 class="home-filter__header__head">
-                        Who is Nageeb?
-                    </h2>
-                    <p class="home-filter__header__desc">
-                        Nageeb is an e-learning platform that enables students to easily book sessions with mentors and
-                        helps teachers manage and receive session requests efficiently. It offers personalized learning
-                        experiences and an interactive dashboard for managing schedules and enhancing engagement. </p>
-                </div>
-                <div class="home-whonageeb mt-4">
-                    <div class="home-whonageeb__image">
-                        <img src="./content/assets/images/home/woh1.png" alt="">
-                        <a href="" class="overlay">
-
-                        </a>
-                        <a href="" class="global-btn home-whonageeb__image__btn">
-                            For Students
-                        </a>
-                    </div>
-                    <div class="home-whonageeb__image">
-                        <img src="./content/assets/images/home/woh1.png" alt="">
-                        <a href="" class="overlay">
-
-                        </a>
-                        <a href="" class="global-btn home-whonageeb__image__btn">
-                            For Instructors
-                        </a>
-                    </div>
-                </div>
+            <div class="image2">
+              <img src="./content/assets/images/home/bg.png" alt="" />
             </div>
-        </section>
+          </div>
+        </div>
+      </section>
 
-        <!-- start cloud software -->
-        <section>
-            <div class="home-filter nageeb-container">
-                <div class="home-filter__header">
-                    <h2 class="home-filter__header__head">
-                        All-In-One Cloud Software.
-                    </h2>
-                    <p class="home-filter__header__desc">
-                        With Nageeb, you can easily book sessions with experienced teachers, ensuring personalized
-                        guidance and support for your educational journey. </p>
-                </div>
-                <div class="home-cloud">
-                    <div class="home-cloud__card">
-                        <div class="image">
-                            <svg width="34" height="46" viewBox="0 0 34 46" fill="none"
-                                xmlns="http://www.w3.org/2000/svg">
-                                <path
-                                    d="M25.25 23H8.75V28.75H25.25V23ZM32.8984 9.43359L24.4852 0.628906C24.0984 0.224609 23.5742 0 23.0242 0H22.5V11.5H33.5V10.952C33.5 10.3859 33.2852 9.83789 32.8984 9.43359ZM19.75 12.2188V0H2.5625C1.41953 0 0.5 0.961328 0.5 2.15625V43.8438C0.5 45.0387 1.41953 46 2.5625 46H31.4375C32.5805 46 33.5 45.0387 33.5 43.8438V14.375H21.8125C20.6781 14.375 19.75 13.4047 19.75 12.2188ZM6 6.46875C6 6.07164 6.30766 5.75 6.6875 5.75H13.5625C13.9423 5.75 14.25 6.07164 14.25 6.46875V7.90625C14.25 8.30336 13.9423 8.625 13.5625 8.625H6.6875C6.30766 8.625 6 8.30336 6 7.90625V6.46875ZM6 12.2188C6 11.8216 6.30766 11.5 6.6875 11.5H13.5625C13.9423 11.5 14.25 11.8216 14.25 12.2188V13.6562C14.25 14.0534 13.9423 14.375 13.5625 14.375H6.6875C6.30766 14.375 6 14.0534 6 13.6562V12.2188ZM28 39.5312C28 39.9284 27.6923 40.25 27.3125 40.25H20.4375C20.0577 40.25 19.75 39.9284 19.75 39.5312V38.0938C19.75 37.6966 20.0577 37.375 20.4375 37.375H27.3125C27.6923 37.375 28 37.6966 28 38.0938V39.5312ZM28 21.5625V30.1875C28 30.9817 27.3847 31.625 26.625 31.625H7.375C6.61531 31.625 6 30.9817 6 30.1875V21.5625C6 20.7683 6.61531 20.125 7.375 20.125H26.625C27.3847 20.125 28 20.7683 28 21.5625Z"
-                                    fill="white" />
-                            </svg>
-                        </div>
-                        <div class="header">
-                            Personalized Learning Paths
-                        </div>
-                        <div class="desc">
-                            Tailor your educational experience with customized recommendations based on your goals and
-                            progress.
-                        </div>
-                    </div>
-                    <div class="home-cloud__card">
-                        <div class="image">
-                            <svg width="49" height="43" viewBox="0 0 49 43" fill="none"
-                                xmlns="http://www.w3.org/2000/svg">
-                                <path
-                                    d="M43.3571 0.14283H38.2143V7C38.2143 7.94681 37.4468 8.71432 36.5 8.71432C35.5532 8.71432 34.7857 7.94681 34.7857 7V0.14283H14.2142V7C14.2142 7.94681 13.4467 8.71432 12.4999 8.71432C11.5531 8.71432 10.7856 7.94681 10.7856 7V0.14283H5.64285C2.80253 0.14283 0.5 2.44536 0.5 5.28568V37.8571C0.5 40.6974 2.80253 43 5.64285 43H43.3571C46.1975 43 48.5 40.6974 48.5 37.8571V5.28568C48.5 2.44536 46.1975 0.14283 43.3571 0.14283ZM45.0714 37.8571C45.0714 38.8039 44.3039 39.5714 43.357 39.5714H5.64285C4.69605 39.5714 3.92854 38.8039 3.92854 37.8571V15.5714H45.0714V37.8571Z"
-                                    fill="#F5F5FC" />
-                            </svg>
-                        </div>
-                        <div class="header">
-                            Easy Session Booking
-                        </div>
-                        <div class="desc">
-                            Seamlessly book sessions with experienced teachers. Schedule lessons with just a few clicks.
-                        </div>
-                    </div>
-                    <div class="home-cloud__card">
-                        <div class="image">
-                            <svg width="55" height="44" viewBox="0 0 55 44" fill="none"
-                                xmlns="http://www.w3.org/2000/svg">
-                                <path
-                                    d="M8.25 19.25C11.2836 19.25 13.75 16.7836 13.75 13.75C13.75 10.7164 11.2836 8.25 8.25 8.25C5.21641 8.25 2.75 10.7164 2.75 13.75C2.75 16.7836 5.21641 19.25 8.25 19.25ZM46.75 19.25C49.7836 19.25 52.25 16.7836 52.25 13.75C52.25 10.7164 49.7836 8.25 46.75 8.25C43.7164 8.25 41.25 10.7164 41.25 13.75C41.25 16.7836 43.7164 19.25 46.75 19.25ZM49.5 22H44C42.4875 22 41.1211 22.6102 40.1242 23.5984C43.5875 25.4977 46.0453 28.9266 46.5781 33H52.25C53.7711 33 55 31.7711 55 30.25V27.5C55 24.4664 52.5336 22 49.5 22ZM27.5 22C32.8195 22 37.125 17.6945 37.125 12.375C37.125 7.05547 32.8195 2.75 27.5 2.75C22.1805 2.75 17.875 7.05547 17.875 12.375C17.875 17.6945 22.1805 22 27.5 22ZM34.1 24.75H33.3867C31.5992 25.6094 29.6141 26.125 27.5 26.125C25.3859 26.125 23.4094 25.6094 21.6133 24.75H20.9C15.4344 24.75 11 29.1844 11 34.65V37.125C11 39.4023 12.8477 41.25 15.125 41.25H39.875C42.1523 41.25 44 39.4023 44 37.125V34.65C44 29.1844 39.5656 24.75 34.1 24.75ZM14.8758 23.5984C13.8789 22.6102 12.5125 22 11 22H5.5C2.46641 22 0 24.4664 0 27.5V30.25C0 31.7711 1.22891 33 2.75 33H8.41328C8.95469 28.9266 11.4125 25.4977 14.8758 23.5984Z"
-                                    fill="white" />
-                            </svg>
-
-                        </div>
-                        <div class="header">
-                            Interactive Virtual Classroom
-                        </div>
-                        <div class="desc">
-                            Engage in dynamic virtual classrooms with real-time video, chat, and collaborative tools.
-                        </div>
-                    </div>
-                </div>
+      <!-- start filter -->
+      <section>
+        <div class="home-filter nageeb-container">
+          <div class="home-filter__header">
+            <h2 class="home-filter__header__head">
+              Start Your Learning Journey
+            </h2>
+            <p class="home-filter__header__desc">
+              we’re committed to making learning an exciting adventure. Dive
+              into our interactive lessons, discover new passions, and reach
+              your academic goals with confidence.
+            </p>
+          </div>
+          <div class="home-filter__container">
+            <div class="home-filter__container__card">
+              <a href="" class="home-filter__container__card__image">
+                <img src="./content/assets/images/home/quran.svg" alt="" />
+              </a>
+              <div class="home-filter__container__card__content">
+                <h3 class="head">Quran Kareem Learners</h3>
+                <p class="desc">
+                  Find a teacher to deepen your understanding of the Quran.
+                </p>
+                <a class="link" href="./teachers.html">Browse Your Teacher</a>
+              </div>
             </div>
-        </section>
-
-        <section>
-            <div class="home-mostPopular nageeb-container">
-                <div class="header">
-                    <a href="">
-                        Explore Teachers
-                    </a>
-                    <h2>
-                        Our Most Popular Teachers
-                    </h2>
-                    <p>Let's join our famous teachers, the knowledge provided will definitely be useful for you.</p>
-                </div>
-
-                <!-- start carousel -->
-                <div class="card item" style="width: 18rem;">
-                    <img src="..." class="card-img-top" alt="...">
-                    <div class="card-body">
-                        <h5 class="card-title">Card title</h5>
-                        <p class="card-text">Some quick example text to build on the card title and make up the
-                            bulk of the card's content.</p>
-                        <a href="#" class="btn btn-primary">Go somewhere</a>
-                    </div>
-                </div>
-                <div>
-                    <a href="" class="global-btn explore-btn"></a>
-                </div>
+            <div class="home-filter__container__card">
+              <a href="" class="home-filter__container__card__image">
+                <img src="./content/assets/images/home/school.svg" alt="" />
+              </a>
+              <div class="home-filter__container__card__content">
+                <h3 class="head">Quran Kareem Learners</h3>
+                <p class="desc">
+                  Find a teacher to deepen your understanding of the Quran.
+                </p>
+                <a class="link" href="./teachers.html">Browse Your Teacher</a>
+              </div>
             </div>
-        </section>
+          </div>
+        </div>
+      </section>
+
+      <!-- start who is nageeb -->
+      <section>
+        <div class="home-filter nageeb-container">
+          <div class="home-filter__header">
+            <h2 class="home-filter__header__head">Who is Nageeb?</h2>
+            <p class="home-filter__header__desc">
+              Nageeb is an e-learning platform that enables students to easily
+              book sessions with mentors and helps teachers manage and receive
+              session requests efficiently. It offers personalized learning
+              experiences and an interactive dashboard for managing schedules
+              and enhancing engagement.
+            </p>
+          </div>
+          <div class="home-whonageeb mt-4">
+            <div class="home-whonageeb__image">
+              <img src="./content/assets/images/home/woh1.png" alt="" />
+              <a href="" class="overlay"> </a>
+              <a href="" class="global-btn home-whonageeb__image__btn">
+                For Students
+              </a>
+            </div>
+            <div class="home-whonageeb__image">
+              <img src="./content/assets/images/home/woh1.png" alt="" />
+              <a href="" class="overlay"> </a>
+              <a href="" class="global-btn home-whonageeb__image__btn">
+                For Instructors
+              </a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- start cloud software -->
+      <section>
+        <div class="home-filter nageeb-container">
+          <div class="home-filter__header">
+            <h2 class="home-filter__header__head">
+              All-In-One Cloud Software.
+            </h2>
+            <p class="home-filter__header__desc">
+              With Nageeb, you can easily book sessions with experienced
+              teachers, ensuring personalized guidance and support for your
+              educational journey.
+            </p>
+          </div>
+          <div class="home-cloud">
+            <div class="home-cloud__card">
+              <div class="image">
+                <svg
+                  width="34"
+                  height="46"
+                  viewBox="0 0 34 46"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M25.25 23H8.75V28.75H25.25V23ZM32.8984 9.43359L24.4852 0.628906C24.0984 0.224609 23.5742 0 23.0242 0H22.5V11.5H33.5V10.952C33.5 10.3859 33.2852 9.83789 32.8984 9.43359ZM19.75 12.2188V0H2.5625C1.41953 0 0.5 0.961328 0.5 2.15625V43.8438C0.5 45.0387 1.41953 46 2.5625 46H31.4375C32.5805 46 33.5 45.0387 33.5 43.8438V14.375H21.8125C20.6781 14.375 19.75 13.4047 19.75 12.2188ZM6 6.46875C6 6.07164 6.30766 5.75 6.6875 5.75H13.5625C13.9423 5.75 14.25 6.07164 14.25 6.46875V7.90625C14.25 8.30336 13.9423 8.625 13.5625 8.625H6.6875C6.30766 8.625 6 8.30336 6 7.90625V6.46875ZM6 12.2188C6 11.8216 6.30766 11.5 6.6875 11.5H13.5625C13.9423 11.5 14.25 11.8216 14.25 12.2188V13.6562C14.25 14.0534 13.9423 14.375 13.5625 14.375H6.6875C6.30766 14.375 6 14.0534 6 13.6562V12.2188ZM28 39.5312C28 39.9284 27.6923 40.25 27.3125 40.25H20.4375C20.0577 40.25 19.75 39.9284 19.75 39.5312V38.0938C19.75 37.6966 20.0577 37.375 20.4375 37.375H27.3125C27.6923 37.375 28 37.6966 28 38.0938V39.5312ZM28 21.5625V30.1875C28 30.9817 27.3847 31.625 26.625 31.625H7.375C6.61531 31.625 6 30.9817 6 30.1875V21.5625C6 20.7683 6.61531 20.125 7.375 20.125H26.625C27.3847 20.125 28 20.7683 28 21.5625Z"
+                    fill="white"
+                  />
+                </svg>
+              </div>
+              <div class="header">Personalized Learning Paths</div>
+              <div class="desc">
+                Tailor your educational experience with customized
+                recommendations based on your goals and progress.
+              </div>
+            </div>
+            <div class="home-cloud__card">
+              <div class="image">
+                <svg
+                  width="49"
+                  height="43"
+                  viewBox="0 0 49 43"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M43.3571 0.14283H38.2143V7C38.2143 7.94681 37.4468 8.71432 36.5 8.71432C35.5532 8.71432 34.7857 7.94681 34.7857 7V0.14283H14.2142V7C14.2142 7.94681 13.4467 8.71432 12.4999 8.71432C11.5531 8.71432 10.7856 7.94681 10.7856 7V0.14283H5.64285C2.80253 0.14283 0.5 2.44536 0.5 5.28568V37.8571C0.5 40.6974 2.80253 43 5.64285 43H43.3571C46.1975 43 48.5 40.6974 48.5 37.8571V5.28568C48.5 2.44536 46.1975 0.14283 43.3571 0.14283ZM45.0714 37.8571C45.0714 38.8039 44.3039 39.5714 43.357 39.5714H5.64285C4.69605 39.5714 3.92854 38.8039 3.92854 37.8571V15.5714H45.0714V37.8571Z"
+                    fill="#F5F5FC"
+                  />
+                </svg>
+              </div>
+              <div class="header">Easy Session Booking</div>
+              <div class="desc">
+                Seamlessly book sessions with experienced teachers. Schedule
+                lessons with just a few clicks.
+              </div>
+            </div>
+            <div class="home-cloud__card">
+              <div class="image">
+                <svg
+                  width="55"
+                  height="44"
+                  viewBox="0 0 55 44"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M8.25 19.25C11.2836 19.25 13.75 16.7836 13.75 13.75C13.75 10.7164 11.2836 8.25 8.25 8.25C5.21641 8.25 2.75 10.7164 2.75 13.75C2.75 16.7836 5.21641 19.25 8.25 19.25ZM46.75 19.25C49.7836 19.25 52.25 16.7836 52.25 13.75C52.25 10.7164 49.7836 8.25 46.75 8.25C43.7164 8.25 41.25 10.7164 41.25 13.75C41.25 16.7836 43.7164 19.25 46.75 19.25ZM49.5 22H44C42.4875 22 41.1211 22.6102 40.1242 23.5984C43.5875 25.4977 46.0453 28.9266 46.5781 33H52.25C53.7711 33 55 31.7711 55 30.25V27.5C55 24.4664 52.5336 22 49.5 22ZM27.5 22C32.8195 22 37.125 17.6945 37.125 12.375C37.125 7.05547 32.8195 2.75 27.5 2.75C22.1805 2.75 17.875 7.05547 17.875 12.375C17.875 17.6945 22.1805 22 27.5 22ZM34.1 24.75H33.3867C31.5992 25.6094 29.6141 26.125 27.5 26.125C25.3859 26.125 23.4094 25.6094 21.6133 24.75H20.9C15.4344 24.75 11 29.1844 11 34.65V37.125C11 39.4023 12.8477 41.25 15.125 41.25H39.875C42.1523 41.25 44 39.4023 44 37.125V34.65C44 29.1844 39.5656 24.75 34.1 24.75ZM14.8758 23.5984C13.8789 22.6102 12.5125 22 11 22H5.5C2.46641 22 0 24.4664 0 27.5V30.25C0 31.7711 1.22891 33 2.75 33H8.41328C8.95469 28.9266 11.4125 25.4977 14.8758 23.5984Z"
+                    fill="white"
+                  />
+                </svg>
+              </div>
+              <div class="header">Interactive Virtual Classroom</div>
+              <div class="desc">
+                Engage in dynamic virtual classrooms with real-time video, chat,
+                and collaborative tools.
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section>
+        <div class="home-mostPopular nageeb-container">
+          <div class="header">
+            <h4 class="sec_title">Explore Teachers</h4>
+            <h2 class="heading">Our Most Popular Teachers</h2>
+            <p class="desc">
+              Let's join our famous teachers, the knowledge provided will
+              definitely be useful for you.
+            </p>
+          </div>
+
+          <div class="cards_container">
+            <div class="row g_y_40">
+              <div class="col-md-4 d-flex justify-content-center">
+                <div class="card teacher_card">
+                  <div>
+                    <img
+                      class="student_img_request"
+                      src="./content/assets/images/teacher_profile/teacher_img_1.png"
+                      alt="teacher_img_1.png"
+                    />
+                  </div>
+                  <div class="request_data_container">
+                    <div class="w-100">
+                      <p class="teacher_name">Mohamed MonGe</p>
+                      <p class="teacher_subject">Math Teacher</p>
+                      <p class="teacher_bio">
+                        Ut enim ad minim veniam, quis nost exercitation ullamco
+                        laboris nisi ut allquip ex commodo.
+                      </p>
+                    </div>
+                    <div class="date rating">
+                      <span class="rating_num">4.3</span>
+                      <img
+                        class="stars_rating"
+                        src="./content/assets/images/modals/stars.png"
+                        alt="stars.png"
+                      />
+                    </div>
+                  </div>
+
+                  <div class="btn_container">
+                    <button
+                      class="btn btn_accept w-100"
+                      data-bs-toggle="modal"
+                      data-bs-target="#start_session_modal"
+                    >
+                      Book
+                    </button>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-md-4 d-flex justify-content-center">
+                <div class="card teacher_card">
+                  <div>
+                    <img
+                      class="student_img_request"
+                      src="./content/assets/images/teacher_profile/teacher_img_1.png"
+                      alt="teacher_img_1.png"
+                    />
+                  </div>
+                  <div class="request_data_container">
+                    <div class="w-100">
+                      <p class="teacher_name">Mohamed MonGe</p>
+                      <p class="teacher_subject">Math Teacher</p>
+                      <p class="teacher_bio">
+                        Ut enim ad minim veniam, quis nost exercitation ullamco
+                        laboris nisi ut allquip ex commodo.
+                      </p>
+                    </div>
+                    <div class="date rating">
+                      <span class="rating_num">4.3</span>
+                      <img
+                        class="stars_rating"
+                        src="./content/assets/images/modals/stars.png"
+                        alt="stars.png"
+                      />
+                    </div>
+                  </div>
+
+                  <div class="btn_container">
+                    <button
+                      class="btn btn_accept w-100"
+                      data-bs-toggle="modal"
+                      data-bs-target="#start_session_modal"
+                    >
+                      Book
+                    </button>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-md-4 d-flex justify-content-center">
+                <div class="card teacher_card">
+                  <div>
+                    <img
+                      class="student_img_request"
+                      src="./content/assets/images/teacher_profile/teacher_img_1.png"
+                      alt="teacher_img_1.png"
+                    />
+                  </div>
+                  <div class="request_data_container">
+                    <div class="w-100">
+                      <p class="teacher_name">Mohamed MonGe</p>
+                      <p class="teacher_subject">Math Teacher</p>
+                      <p class="teacher_bio">
+                        Ut enim ad minim veniam, quis nost exercitation ullamco
+                        laboris nisi ut allquip ex commodo.
+                      </p>
+                    </div>
+                    <div class="date rating">
+                      <span class="rating_num">4.3</span>
+                      <img
+                        class="stars_rating"
+                        src="./content/assets/images/modals/stars.png"
+                        alt="stars.png"
+                      />
+                    </div>
+                  </div>
+
+                  <div class="btn_container">
+                    <button
+                      class="btn btn_accept w-100"
+                      data-bs-toggle="modal"
+                      data-bs-target="#start_session_modal"
+                    >
+                      Book
+                    </button>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-4 d-flex justify-content-center">
+                <div class="card teacher_card">
+                  <div>
+                    <img
+                      class="student_img_request"
+                      src="./content/assets/images/teacher_profile/teacher_img_1.png"
+                      alt="teacher_img_1.png"
+                    />
+                  </div>
+                  <div class="request_data_container">
+                    <div class="w-100">
+                      <p class="teacher_name">Mohamed MonGe</p>
+                      <p class="teacher_subject">Math Teacher</p>
+                      <p class="teacher_bio">
+                        Ut enim ad minim veniam, quis nost exercitation ullamco
+                        laboris nisi ut allquip ex commodo.
+                      </p>
+                    </div>
+                    <div class="date rating">
+                      <span class="rating_num">4.3</span>
+                      <img
+                        class="stars_rating"
+                        src="./content/assets/images/modals/stars.png"
+                        alt="stars.png"
+                      />
+                    </div>
+                  </div>
+
+                  <div class="btn_container">
+                    <button
+                      class="btn btn_accept w-100"
+                      data-bs-toggle="modal"
+                      data-bs-target="#start_session_modal"
+                    >
+                      Book
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div>
+            <a href="" class="global-btn explore_btn">Explore All Teachers</a>
+          </div>
+        </div>
+      </section>
+
+      <section class="home_client_testimonial">
+        <div class="nageeb-container">
+          <h3 class="title">
+            What Our <span class="text_primary">Clients</span> Say About Nageeb
+          </h3>
+          <p class="subtitle">
+            Let's join our famous teachers, the knowledge provided will
+            definitely be useful for you.
+          </p>
+          <div class="slider_container">
+            <div class="owl-carousel home_client_testimonial_slider">
+              <div class="item">
+                <div class="card">
+                  <div>
+                    <img
+                      class="testimonial_pic"
+                      src="./content/assets/images/home/testimonial_pic.png"
+                      alt="testimonial_pic.png"
+                    />
+                  </div>
+                  <p class="testimonial_name">Mohamed MonGe</p>
+                  <div>
+                    <img
+                      class="testimonial_quote_icon"
+                      src="./content/assets/images/home/block-quote-img.png"
+                      alt="block-quote-img.png"
+                    />
+                  </div>
+
+                  <p class="testimonial_text">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                    Cursus nibh mauris, nec turpis orci lectus maecenas.
+                    Suspendisse sed magna eget nibh in turpis. Consequat duis
+                    diam lacus arcu. Faucibus venenatis felis id augue sit
+                    cursus pellentesque enim
+                  </p>
+                </div>
+              </div>
+
+              <div class="item">
+                <div class="card">
+                  <div>
+                    <img
+                      class="testimonial_pic"
+                      src="./content/assets/images/home/testimonial_pic.png"
+                      alt="testimonial_pic.png"
+                    />
+                  </div>
+                  <p class="testimonial_name">Mohamed MonGe</p>
+                  <div>
+                    <img
+                      class="testimonial_quote_icon"
+                      src="./content/assets/images/home/block-quote-img.png"
+                      alt="block-quote-img.png"
+                    />
+                  </div>
+
+                  <p class="testimonial_text">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                    Cursus nibh mauris, nec turpis orci lectus maecenas.
+                    Suspendisse sed magna eget nibh in turpis. Consequat duis
+                    diam lacus arcu. Faucibus venenatis felis id augue sit
+                    cursus pellentesque enim
+                  </p>
+                </div>
+              </div>
+
+              <div class="item">
+                <div class="card">
+                  <div>
+                    <img
+                      class="testimonial_pic"
+                      src="./content/assets/images/home/testimonial_pic.png"
+                      alt="testimonial_pic.png"
+                    />
+                  </div>
+                  <p class="testimonial_name">Mohamed MonGe</p>
+                  <div>
+                    <img
+                      class="testimonial_quote_icon"
+                      src="./content/assets/images/home/block-quote-img.png"
+                      alt="block-quote-img.png"
+                    />
+                  </div>
+
+                  <p class="testimonial_text">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                    Cursus nibh mauris, nec turpis orci lectus maecenas.
+                    Suspendisse sed magna eget nibh in turpis. Consequat duis
+                    diam lacus arcu. Faucibus venenatis felis id augue sit
+                    cursus pellentesque enim
+                  </p>
+                </div>
+              </div>
+
+              <div class="item">
+                <div class="card">
+                  <div>
+                    <img
+                      class="testimonial_pic"
+                      src="./content/assets/images/home/testimonial_pic.png"
+                      alt="testimonial_pic.png"
+                    />
+                  </div>
+                  <p class="testimonial_name">Mohamed MonGe</p>
+                  <div>
+                    <img
+                      class="testimonial_quote_icon"
+                      src="./content/assets/images/home/block-quote-img.png"
+                      alt="block-quote-img.png"
+                    />
+                  </div>
+
+                  <p class="testimonial_text">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                    Cursus nibh mauris, nec turpis orci lectus maecenas.
+                    Suspendisse sed magna eget nibh in turpis. Consequat duis
+                    diam lacus arcu. Faucibus venenatis felis id augue sit
+                    cursus pellentesque enim
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="how_it_work">
+        <div class="nageeb-container">
+          <div class="row">
+            <div class="col-md-6 center_flex">
+              <div class="div_wrapper">
+                <h4 class="title">
+                  How it works: <br />
+                  Downloading <span class="text_primary">Nageeb</span>
+                </h4>
+                <p class="subtitle">
+                  Discover the magic of Nageeb in just a few simple steps!
+                  Download the app and unlock a world where learning meets play.
+                  All designed to captivate young minds and make education an
+                  exciting journey.
+                </p>
+                <div class="btns_container">
+                  <a href="">
+                    <img
+                      src="./content/assets/images/about_us/google_play.png"
+                      alt="google_play.png"
+                    />
+                  </a>
+                  <a href="">
+                    <img
+                      src="./content/assets/images/about_us/Mobile App apple.png"
+                      alt="Mobile App apple.png"
+                    />
+                  </a>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-6 center_flex gy-4">
+              <div class="w-100">
+                <img
+                  class="w-100"
+                  src="./content/assets/images/about_us/about_us_mob_screens.png"
+                  alt="about_us_mob_screens.png"
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="">
+        <div class="nageeb-container home_email_subscribe_sec">
+          <div class="row">
+            <div class="col-lg-8">
+              <div class="hero_container">
+                <h5 class="title">Enter your Email to get the Latest News</h5>
+                <p class="subtitle">
+                  Lorem Ipsum is simply dummy text of the printing and
+                  typesetting
+                </p>
+                <div class="btn_email_container">
+                  <input
+                    type="email"
+                    class="email"
+                    placeholder="Enter your email address"
+                  />
+                  <button class="btn btn_started">Get Started</button>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-4">
+              <div class="center_img">
+                <img
+                  src="./content/assets/images/home/img_email_sec_subscribe.png"
+                  class="img_subscribr"
+                  alt="img_email_sec_subscribe.png"
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="home_last_sec">
+        <div class="nageeb-container">
+          <div class="d-flex justify-content-between">
+            <img
+              class="img_1"
+              src="./content/assets/images/home/home_last_sec_img1.png"
+              alt="home_last_sec_img1.png"
+            />
+            <img
+              class="img_2"
+              src="./content/assets/images/home/home_last_sec_img2.png"
+              alt="home_last_sec_img2.png"
+            />
+          </div>
+        </div>
+      </section>
     </main>
     <!-- start footer -->
-    <footer class="footer ">
-        <div class="footer-container">
-            <div class="footer-logo">
-                <img src="./content/assets/images/general/logo.png" alt="Logo">
-                <p>Where every game is a lesson, and every lesson is a game. Our app transforms education into playful
-                    games, captivating young minds with interactive fun.</p>
-                <div class="app-links">
-                    <a href="#"><img src="./content/assets/images/general/google.svg" alt="Google Play"></a>
-                    <a href="#"><img src="./content/assets/images/general/apple.svg" alt="App Store"></a>
-                </div>
-            </div>
-            <div class="footer-links">
-                <div class="quick-links">
-                    <h3>Quick Links</h3>
-                    <ul>
-                        <li><a href="#">Privacy Policy</a></li>
-                        <li><a href="#">Terms & Conditions</a></li>
-                        <li><a href="#">Support</a></li>
-                    </ul>
-                </div>
-                <div class="company">
-                    <h3>Company</h3>
-                    <ul>
-                        <li><a href="teachers.html">Teachers</a></li>
-                        <li><a href="index.html">Home</a></li>
-                    </ul>
-                </div>
-                <div class="connect">
-                    <h3>Connect with us</h3>
-                    <ul>
-                        <li><a href="#"><img src="./content/assets/images/general/fb.svg" alt="Facebook"> Facebook</a>
-                        </li>
-                        <li><a href="#"><img src="./content/assets/images/general/ins.svg" alt="Instagram">
-                                Instagram</a></li>
-                        <li><a href="#"><img src="./content/assets/images/general/x.svg" alt="Twitter"> Twitter</a></li>
-                        <li><a href="#"><img src="./content/assets/images/general/tik.svg" alt="TikTok"> TikTok</a></li>
-                    </ul>
-                </div>
-            </div>
+    <footer class="footer">
+      <div class="footer-container">
+        <div class="footer-logo">
+          <img src="./content/assets/images/general/logo.png" alt="Logo" />
+          <p>
+            Where every game is a lesson, and every lesson is a game. Our app
+            transforms education into playful games, captivating young minds
+            with interactive fun.
+          </p>
+          <div class="app-links">
+            <a href="#"
+              ><img
+                src="./content/assets/images/general/google.svg"
+                alt="Google Play"
+            /></a>
+            <a href="#"
+              ><img
+                src="./content/assets/images/general/apple.svg"
+                alt="App Store"
+            /></a>
+          </div>
         </div>
-        <div class="footer-bottom">
-            <p>© Copyright 2024, All Rights Reserved</p>
+        <div class="footer-links">
+          <div class="quick-links">
+            <h3>Quick Links</h3>
+            <ul>
+              <li><a href="#">Privacy Policy</a></li>
+              <li><a href="#">Terms & Conditions</a></li>
+              <li><a href="#">Support</a></li>
+            </ul>
+          </div>
+          <div class="company">
+            <h3>Company</h3>
+            <ul>
+              <li><a href="teachers.html">Teachers</a></li>
+              <li><a href="index.html">Home</a></li>
+            </ul>
+          </div>
+          <div class="connect">
+            <h3>Connect with us</h3>
+            <ul>
+              <li>
+                <a href="#"
+                  ><img
+                    src="./content/assets/images/general/fb.svg"
+                    alt="Facebook"
+                  />
+                  Facebook</a
+                >
+              </li>
+              <li>
+                <a href="#"
+                  ><img
+                    src="./content/assets/images/general/ins.svg"
+                    alt="Instagram"
+                  />
+                  Instagram</a
+                >
+              </li>
+              <li>
+                <a href="#"
+                  ><img
+                    src="./content/assets/images/general/x.svg"
+                    alt="Twitter"
+                  />
+                  Twitter</a
+                >
+              </li>
+              <li>
+                <a href="#"
+                  ><img
+                    src="./content/assets/images/general/tik.svg"
+                    alt="TikTok"
+                  />
+                  TikTok</a
+                >
+              </li>
+            </ul>
+          </div>
         </div>
+      </div>
+      <div class="footer-bottom">
+        <p>© Copyright 2024, All Rights Reserved</p>
+      </div>
     </footer>
-    <script>
-        const wordPosition = 2; // Change this number to target a different word position
 
-        // Function to highlight the nth word in a text node and add <br> tag after it
-        function highlightNthWordInText(text, position) {
-            const words = text.split(/\s+/);
-            if (words.length >= position) {
-                words[position] = `<span class="highlight">${words[position]}</span><br>`;
-            }
-            return words.join(' ');
-        }
-
-        // Function to recursively highlight words in the element's child nodes
-        function highlightNthWordInElement(element, position) {
-            element.childNodes.forEach(child => {
-                if (child.nodeType === Node.TEXT_NODE) {
-                    const newText = highlightNthWordInText(child.textContent, position);
-                    const newElement = document.createElement('span');
-                    newElement.innerHTML = newText;
-                    child.replaceWith(...newElement.childNodes);
-                } else if (child.nodeType === Node.ELEMENT_NODE) {
-                    highlightNthWordInElement(child, position);
-                }
-            });
-        }
-
-        // Fetching the h1 element
-        const header = document.querySelector('.home-hero__content__header');
-
-        // Highlighting the nth word in the header element
-        highlightNthWordInElement(header, wordPosition);
-
-        // If the nth word position comes from the backend, you can fetch it as follows:
-        /*
-        fetch('/api/word-position') // Replace with your actual API endpoint
-        .then(response => response.json())
-        .then(data => {
-            const wordPosition = data.wordPosition;
-            highlightNthWordInElement(header, wordPosition);
-        })
-        .catch(error => console.error('Error fetching word position:', error));
-        */
-    </script>
-    </script>
     <!-- Global jquery CDN V3.7.1  -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"
-        integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g=="
-        crossorigin="anonymous"></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"
+      integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g=="
+      crossorigin="anonymous"
+    ></script>
     <!-- Global Bootstrap CDN V5.3.2  -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.2/js/bootstrap.bundle.min.js"
-        integrity="sha512-X/YkDZyjTf4wyc2Vy16YGCPHwAY8rZJY+POgokZjQB2mhIRFJCckEGc6YyX9eNsPfn0PzThEuNs+uaomE5CO6A=="
-        crossorigin="anonymous"></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.2/js/bootstrap.bundle.min.js"
+      integrity="sha512-X/YkDZyjTf4wyc2Vy16YGCPHwAY8rZJY+POgokZjQB2mhIRFJCckEGc6YyX9eNsPfn0PzThEuNs+uaomE5CO6A=="
+      crossorigin="anonymous"
+    ></script>
     <!-- Global Font Awesome CDN V6.5.1 -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/js/all.min.js"
-        integrity="sha512-GWzVrcGlo0TxTRvz9ttioyYJ+Wwk9Ck0G81D+eO63BaqHaJ3YZX9wuqjwgfcV/MrB2PhaVX9DkYVhbFpStnqpQ=="
-        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/js/all.min.js"
+      integrity="sha512-GWzVrcGlo0TxTRvz9ttioyYJ+Wwk9Ck0G81D+eO63BaqHaJ3YZX9wuqjwgfcV/MrB2PhaVX9DkYVhbFpStnqpQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <!-- Additional Owl Carousel CDN V2.3.4  -->
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"
+      integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw=="
+      crossorigin="anonymous"
+    ></script>
 
     <script src="./content/js/owl-init.js"></script>
+    <!-- additional files for home page only to highlight text -->
+    <script src="./content/js/highlight_text.js"></script>
+    <!-- Aos animation -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <!-- Aos animation -->
     <!-- Global general Js File -->
     <script src="./content/js/general.js"></script>
-</body>
-
+    <script src="./content/js/home.js"></script>
+  </body>
 </html>
